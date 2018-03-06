@@ -1,0 +1,10 @@
+platform :ios, '9.0'
+use_frameworks!
+
+target 'GlobalHouse_Swift' do
+pod 'AlamofireObjectMapper', '~> 4.0'
+pod 'Kingfisher'
+pod 'RTRootNavigationController'
+
+
+end
