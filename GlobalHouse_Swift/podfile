@@ -2,9 +2,9 @@ platform :ios, '9.0'
 use_frameworks!
 
 target 'GlobalHouse_Swift' do
-pod 'AlamofireObjectMapper', '~> 4.0'
+pod 'AlamofireObjectMapper', '~> 5.0'
 pod 'Kingfisher'
 pod 'RTRootNavigationController'
-
+pod 'SVProgressHUD'
 
 end

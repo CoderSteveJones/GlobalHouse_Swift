@@ -14,6 +14,18 @@
 		B5510EC0204E5F2E00D0D5F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5510EBE204E5F2E00D0D5F8 /* LaunchScreen.storyboard */; };
 		B5510ECB204E5F2F00D0D5F8 /* GlobalHouse_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5510ECA204E5F2F00D0D5F8 /* GlobalHouse_SwiftTests.swift */; };
 		B5510ED6204E5F2F00D0D5F8 /* GlobalHouse_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5510ED5204E5F2F00D0D5F8 /* GlobalHouse_SwiftUITests.swift */; };
+		B5510EE8204E657600D0D5F8 /* BaseNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5510EE7204E657600D0D5F8 /* BaseNavController.swift */; };
+		B5510EEC204E7B0700D0D5F8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5510EEB204E7B0700D0D5F8 /* BaseViewController.swift */; };
+		B5510EEE204E7B2300D0D5F8 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5510EED204E7B2300D0D5F8 /* BaseTabBarController.swift */; };
+		B5510F01204E7D8300D0D5F8 /* ManageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5510EFF204E7D8300D0D5F8 /* ManageViewController.swift */; };
+		B5510F02204E7D8300D0D5F8 /* ManageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5510F00204E7D8300D0D5F8 /* ManageViewController.xib */; };
+		B5510F05204E7D9300D0D5F8 /* ModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5510F03204E7D9300D0D5F8 /* ModelViewController.swift */; };
+		B5510F06204E7D9300D0D5F8 /* ModelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5510F04204E7D9300D0D5F8 /* ModelViewController.xib */; };
+		B5510F09204E7DA000D0D5F8 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5510F07204E7DA000D0D5F8 /* MyViewController.swift */; };
+		B5510F0A204E7DA000D0D5F8 /* MyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5510F08204E7DA000D0D5F8 /* MyViewController.xib */; };
+		B5510F0D204E7DAB00D0D5F8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5510F0B204E7DAB00D0D5F8 /* HomeViewController.swift */; };
+		B5510F0E204E7DAB00D0D5F8 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5510F0C204E7DAB00D0D5F8 /* HomeViewController.xib */; };
+		B5510F10204E908D00D0D5F8 /* GHDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5510F0F204E908D00D0D5F8 /* GHDefine.swift */; };
 		F18BEA4F3D32BF6F8A64291B /* Pods_GlobalHouse_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84DB4E913A651F1AE79889CB /* Pods_GlobalHouse_Swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +63,20 @@
 		B5510ED1204E5F2F00D0D5F8 /* GlobalHouse_SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlobalHouse_SwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5510ED5204E5F2F00D0D5F8 /* GlobalHouse_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHouse_SwiftUITests.swift; sourceTree = "<group>"; };
 		B5510ED7204E5F2F00D0D5F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5510EE6204E64DC00D0D5F8 /* GlobalHouse_Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GlobalHouse_Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		B5510EE7204E657600D0D5F8 /* BaseNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavController.swift; sourceTree = "<group>"; };
+		B5510EEA204E6AAC00D0D5F8 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5510EEB204E7B0700D0D5F8 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		B5510EED204E7B2300D0D5F8 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		B5510EFF204E7D8300D0D5F8 /* ManageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageViewController.swift; sourceTree = "<group>"; };
+		B5510F00204E7D8300D0D5F8 /* ManageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ManageViewController.xib; sourceTree = "<group>"; };
+		B5510F03204E7D9300D0D5F8 /* ModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelViewController.swift; sourceTree = "<group>"; };
+		B5510F04204E7D9300D0D5F8 /* ModelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModelViewController.xib; sourceTree = "<group>"; };
+		B5510F07204E7DA000D0D5F8 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		B5510F08204E7DA000D0D5F8 /* MyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyViewController.xib; sourceTree = "<group>"; };
+		B5510F0B204E7DAB00D0D5F8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B5510F0C204E7DAB00D0D5F8 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		B5510F0F204E908D00D0D5F8 /* GHDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHDefine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +130,9 @@
 		B5510EB4204E5F2E00D0D5F8 /* GlobalHouse_Swift */ = {
 			isa = PBXGroup;
 			children = (
-				B5510EB5204E5F2E00D0D5F8 /* AppDelegate.swift */,
+				B5510EE4204E647700D0D5F8 /* BaseController */,
+				B5510EE5204E647700D0D5F8 /* Constant */,
+				B5510EE3204E647700D0D5F8 /* ItemController */,
 				B5510EB7204E5F2E00D0D5F8 /* ViewController.swift */,
 				B5510EB9204E5F2E00D0D5F8 /* Main.storyboard */,
 				B5510EBC204E5F2E00D0D5F8 /* Assets.xcassets */,
@@ -132,9 +160,173 @@
 			path = GlobalHouse_SwiftUITests;
 			sourceTree = "<group>";
 		};
+		B5510EE3204E647700D0D5F8 /* ItemController */ = {
+			isa = PBXGroup;
+			children = (
+				B5510EEF204E7D6600D0D5F8 /* 主页 */,
+				B5510EF7204E7D6600D0D5F8 /* 管理 */,
+				B5510EFB204E7D6600D0D5F8 /* 模式 */,
+				B5510EF3204E7D6600D0D5F8 /* 我的 */,
+			);
+			path = ItemController;
+			sourceTree = "<group>";
+		};
+		B5510EE4204E647700D0D5F8 /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				B5510EE7204E657600D0D5F8 /* BaseNavController.swift */,
+				B5510EEB204E7B0700D0D5F8 /* BaseViewController.swift */,
+				B5510EED204E7B2300D0D5F8 /* BaseTabBarController.swift */,
+			);
+			path = BaseController;
+			sourceTree = "<group>";
+		};
+		B5510EE5204E647700D0D5F8 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				B5510EE6204E64DC00D0D5F8 /* GlobalHouse_Swift-Bridging-Header.h */,
+				B5510EB5204E5F2E00D0D5F8 /* AppDelegate.swift */,
+				B5510F0F204E908D00D0D5F8 /* GHDefine.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		B5510EEF204E7D6600D0D5F8 /* 主页 */ = {
+			isa = PBXGroup;
+			children = (
+				B5510EF0204E7D6600D0D5F8 /* Controller */,
+				B5510EF1204E7D6600D0D5F8 /* Model */,
+				B5510EF2204E7D6600D0D5F8 /* View */,
+			);
+			path = "主页";
+			sourceTree = "<group>";
+		};
+		B5510EF0204E7D6600D0D5F8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B5510F0B204E7DAB00D0D5F8 /* HomeViewController.swift */,
+				B5510F0C204E7DAB00D0D5F8 /* HomeViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B5510EF1204E7D6600D0D5F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B5510EF2204E7D6600D0D5F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B5510EF3204E7D6600D0D5F8 /* 我的 */ = {
+			isa = PBXGroup;
+			children = (
+				B5510EF4204E7D6600D0D5F8 /* Controller */,
+				B5510EF5204E7D6600D0D5F8 /* Model */,
+				B5510EF6204E7D6600D0D5F8 /* View */,
+			);
+			path = "我的";
+			sourceTree = "<group>";
+		};
+		B5510EF4204E7D6600D0D5F8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B5510F07204E7DA000D0D5F8 /* MyViewController.swift */,
+				B5510F08204E7DA000D0D5F8 /* MyViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B5510EF5204E7D6600D0D5F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B5510EF6204E7D6600D0D5F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B5510EF7204E7D6600D0D5F8 /* 管理 */ = {
+			isa = PBXGroup;
+			children = (
+				B5510EF8204E7D6600D0D5F8 /* Controller */,
+				B5510EF9204E7D6600D0D5F8 /* Model */,
+				B5510EFA204E7D6600D0D5F8 /* View */,
+			);
+			path = "管理";
+			sourceTree = "<group>";
+		};
+		B5510EF8204E7D6600D0D5F8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B5510EFF204E7D8300D0D5F8 /* ManageViewController.swift */,
+				B5510F00204E7D8300D0D5F8 /* ManageViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B5510EF9204E7D6600D0D5F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B5510EFA204E7D6600D0D5F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B5510EFB204E7D6600D0D5F8 /* 模式 */ = {
+			isa = PBXGroup;
+			children = (
+				B5510EFC204E7D6600D0D5F8 /* Controller */,
+				B5510EFD204E7D6600D0D5F8 /* Model */,
+				B5510EFE204E7D6600D0D5F8 /* View */,
+			);
+			path = "模式";
+			sourceTree = "<group>";
+		};
+		B5510EFC204E7D6600D0D5F8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B5510F03204E7D9300D0D5F8 /* ModelViewController.swift */,
+				B5510F04204E7D9300D0D5F8 /* ModelViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B5510EFD204E7D6600D0D5F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B5510EFE204E7D6600D0D5F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		D4F93BEBA918D1A0AF004AE8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B5510EEA204E6AAC00D0D5F8 /* SVProgressHUD.framework */,
 				84DB4E913A651F1AE79889CB /* Pods_GlobalHouse_Swift.framework */,
 			);
 			name = Frameworks;
@@ -260,8 +452,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5510EC0204E5F2E00D0D5F8 /* LaunchScreen.storyboard in Resources */,
+				B5510F02204E7D8300D0D5F8 /* ManageViewController.xib in Resources */,
+				B5510F0A204E7DA000D0D5F8 /* MyViewController.xib in Resources */,
 				B5510EBD204E5F2E00D0D5F8 /* Assets.xcassets in Resources */,
 				B5510EBB204E5F2E00D0D5F8 /* Main.storyboard in Resources */,
+				B5510F0E204E7DAB00D0D5F8 /* HomeViewController.xib in Resources */,
+				B5510F06204E7D9300D0D5F8 /* ModelViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +490,7 @@
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/RTRootNavigationController/RTRootNavigationController.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -302,6 +499,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RTRootNavigationController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -349,7 +547,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5510EB8204E5F2E00D0D5F8 /* ViewController.swift in Sources */,
+				B5510EEC204E7B0700D0D5F8 /* BaseViewController.swift in Sources */,
+				B5510EEE204E7B2300D0D5F8 /* BaseTabBarController.swift in Sources */,
+				B5510EE8204E657600D0D5F8 /* BaseNavController.swift in Sources */,
 				B5510EB6204E5F2E00D0D5F8 /* AppDelegate.swift in Sources */,
+				B5510F0D204E7DAB00D0D5F8 /* HomeViewController.swift in Sources */,
+				B5510F05204E7D9300D0D5F8 /* ModelViewController.swift in Sources */,
+				B5510F10204E908D00D0D5F8 /* GHDefine.swift in Sources */,
+				B5510F09204E7DA000D0D5F8 /* MyViewController.swift in Sources */,
+				B5510F01204E7D8300D0D5F8 /* ManageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,11 +724,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GlobalHouse_Swift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yueyi.GlobalHouse-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/GlobalHouse_Swift/Constant/GlobalHouse_Swift-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 			};
 			name = Debug;
 		};
@@ -533,11 +743,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GlobalHouse_Swift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yueyi.GlobalHouse-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/GlobalHouse_Swift/Constant/GlobalHouse_Swift-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 			};
 			name = Release;
 		};
