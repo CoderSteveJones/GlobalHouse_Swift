@@ -26,6 +26,7 @@
 		B5510F0D204E7DAB00D0D5F8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5510F0B204E7DAB00D0D5F8 /* HomeViewController.swift */; };
 		B5510F0E204E7DAB00D0D5F8 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5510F0C204E7DAB00D0D5F8 /* HomeViewController.xib */; };
 		B5510F10204E908D00D0D5F8 /* GHDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5510F0F204E908D00D0D5F8 /* GHDefine.swift */; };
+		B5706D28204F7A51007E45D2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5706D29204F7A51007E45D2 /* Alamofire.framework */; };
 		F18BEA4F3D32BF6F8A64291B /* Pods_GlobalHouse_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84DB4E913A651F1AE79889CB /* Pods_GlobalHouse_Swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,19 @@
 			remoteInfo = GlobalHouse_Swift;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B5706D27204F7896007E45D2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		68D14A4A4418796A1A4AAFE7 /* Pods-GlobalHouse_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalHouse_Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-GlobalHouse_Swift/Pods-GlobalHouse_Swift.release.xcconfig"; sourceTree = "<group>"; };
@@ -77,6 +91,8 @@
 		B5510F0B204E7DAB00D0D5F8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B5510F0C204E7DAB00D0D5F8 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		B5510F0F204E908D00D0D5F8 /* GHDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHDefine.swift; sourceTree = "<group>"; };
+		B5706D20204F770F007E45D2 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5706D29204F7A51007E45D2 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5706D28204F7A51007E45D2 /* Alamofire.framework in Frameworks */,
 				F18BEA4F3D32BF6F8A64291B /* Pods_GlobalHouse_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,6 +343,8 @@
 		D4F93BEBA918D1A0AF004AE8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B5706D29204F7A51007E45D2 /* Alamofire.framework */,
+				B5706D20204F770F007E45D2 /* Alamofire.framework */,
 				B5510EEA204E6AAC00D0D5F8 /* SVProgressHUD.framework */,
 				84DB4E913A651F1AE79889CB /* Pods_GlobalHouse_Swift.framework */,
 			);
@@ -354,6 +373,7 @@
 				B5510EB0204E5F2E00D0D5F8 /* Resources */,
 				472F5D99303FCB8EBE979F38 /* [CP] Embed Pods Frameworks */,
 				792BF67EA1B8A32510224891 /* [CP] Copy Pods Resources */,
+				B5706D27204F7896007E45D2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

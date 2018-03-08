@@ -7,8 +7,9 @@
 //
 
 import UIKit
-import AlamofireObjectMapper
-import Kingfisher
+import Alamofire
+//import Kingfisher
+//import AlamofireObjectMapper
 
 class HomeViewController: BaseViewController {
 
@@ -16,6 +17,12 @@ class HomeViewController: BaseViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view
+        let url = "http://139.196.36.167:8084/h5Server/v1/Shop/getMerchants"
+        let par = [ "merchantProperty" : "1",
+                    "page" : "1",
+                    "rows" : "10"]
+        
+//        Alamofire.request(url, method: .post, parameters: par, encoding: JSONEncoding.default, headers: nil).
         
         
         

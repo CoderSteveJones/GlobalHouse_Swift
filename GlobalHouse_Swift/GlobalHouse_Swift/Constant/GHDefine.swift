@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import Alamofire
+
 
 // 屏幕的物理宽度
 let kScreenW = UIScreen.main.bounds.size.width
