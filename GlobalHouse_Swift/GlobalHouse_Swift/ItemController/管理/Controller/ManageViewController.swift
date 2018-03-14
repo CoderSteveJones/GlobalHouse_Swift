@@ -14,6 +14,7 @@ class ManageViewController: BaseViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        title = "管理"
     }
 
     override func didReceiveMemoryWarning() {

@@ -8,28 +8,39 @@
 
 import UIKit
 
-class ModelViewController: BaseViewController {
-
+class ModelViewController: BaseViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    fileprivate lazy var titleArrs = [["定时列表","联动列表","智能模式"],
+                                   ["设备分组"],
+                                   ["设备管理","位置管理"]]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        title = "模式"
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return titleArrs.count
+    }
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        let titles = titleArrs[section]
+        return titles.count
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cellID = "cellID"
+        var cell = tableView.dequeueReusableCell(withIdentifier: cellID)
+        if cell == nil {
+            cell = UITableViewCell(style: .value1, reuseIdentifier: cellID)
+        }
+        let titles = titleArrs[indexPath.section]
+        cell?.textLabel?.text = titles[indexPath.row]
+        return cell!
     }
-    */
 
 }

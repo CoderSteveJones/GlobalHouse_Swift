@@ -3,6 +3,7 @@ PODS:
   - AlamofireObjectMapper (5.0.0):
     - Alamofire (~> 4.1)
     - ObjectMapper (~> 3.0)
+  - HandyJSON (4.0.0-beta.1)
   - Kingfisher (4.6.3)
   - ObjectMapper (3.1.0)
   - RTRootNavigationController (0.6.6):
@@ -12,6 +13,7 @@ PODS:
 
 DEPENDENCIES:
   - AlamofireObjectMapper (~> 5.0)
+  - HandyJSON (~> 4.0.0-beta.1)
   - Kingfisher
   - RTRootNavigationController
   - SVProgressHUD
@@ -19,11 +21,12 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
   AlamofireObjectMapper: 5fafc816351cbbc0d486611aaeba7461c0cbad49
+  HandyJSON: 428bb18e2c34c2a77361accebf90cf64e4f74118
   Kingfisher: 98e6d5b5e807645743e8ed5ececd25d688d38452
   ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
   RTRootNavigationController: 1429554f853e8319a383849befed73d5dc58a108
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: ba23b440d40a989a76af9cfd930dcbb301ebeed5
+PODFILE CHECKSUM: be919334a97b2bff167e4933f8f2eb1900d4aa1c
 
 COCOAPODS: 1.4.0

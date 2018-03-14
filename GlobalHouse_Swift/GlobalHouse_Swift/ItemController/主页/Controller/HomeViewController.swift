@@ -7,9 +7,6 @@
 //
 
 import UIKit
-import Alamofire
-//import Kingfisher
-//import AlamofireObjectMapper
 
 class HomeViewController: BaseViewController {
 
@@ -17,15 +14,45 @@ class HomeViewController: BaseViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view
-        let url = "http://139.196.36.167:8084/h5Server/v1/Shop/getMerchants"
-        let par = [ "merchantProperty" : "1",
-                    "page" : "1",
-                    "rows" : "10"]
+        title = "主页"
         
-//        Alamofire.request(url, method: .post, parameters: par, encoding: JSONEncoding.default, headers: nil).
+        let urlStr = "http://192.168.2.162:6060/User"
+        let par = ["action" : "getUserDeviceList",
+                   "userId" : "5e54613846b647fa81301785282b5c46",
+                     "page" : "1",
+                 "pageSize" : "10"]
+        
+//        NetworkRequest.sharedInstance.postRequest(urlString: urlStr, params: par, success: { (response) in
+//            let str = response["code"] as! String
+//            if str == "0000" {
+//                let dataArr = response["data"] as! [Any]
+//                if let devices = [Device].deserialize(from: dataArr){
+//                    if let device = devices[0] {
+//                        print(device.showName)
+//                    }
+//                }
+//
+//            }
+//        }) { (error) in
+//            SVProgressHUD.showError(withStatus: error.localizedDescription)
+//        }
         
         
-        
+        NetworkRequest.sharedInstance.getRequest(urlString: urlStr, params: par, success: { (response) in
+            let str = response["code"] as! String
+            if str == "0000" {
+                let dataArr = response["data"] as! [Any]
+                if let devices = [Device].deserialize(from: dataArr){
+                    if let device = devices[0] {
+                        print(device.showName)
+                    }
+                }
+            }else {
+                
+            }
+        }) { (error) in
+            SVProgressHUD.showError(withStatus: error.localizedDescription)
+        }
     }
 
     override func didReceiveMemoryWarning() {

@@ -14,6 +14,7 @@ class MyViewController: BaseViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        title = "我的"
     }
 
     override func didReceiveMemoryWarning() {

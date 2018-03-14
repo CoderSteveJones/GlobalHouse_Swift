@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5383DC3205934EF0056C019 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5383DC2205934EF0056C019 /* NetworkRequest.swift */; };
+		B5383DC52059444A0056C019 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5383DC42059444A0056C019 /* Device.swift */; };
 		B5510EB6204E5F2E00D0D5F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5510EB5204E5F2E00D0D5F8 /* AppDelegate.swift */; };
 		B5510EB8204E5F2E00D0D5F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5510EB7204E5F2E00D0D5F8 /* ViewController.swift */; };
 		B5510EBB204E5F2E00D0D5F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5510EB9204E5F2E00D0D5F8 /* Main.storyboard */; };
@@ -64,6 +66,8 @@
 		68D14A4A4418796A1A4AAFE7 /* Pods-GlobalHouse_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalHouse_Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-GlobalHouse_Swift/Pods-GlobalHouse_Swift.release.xcconfig"; sourceTree = "<group>"; };
 		84DB4E913A651F1AE79889CB /* Pods_GlobalHouse_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GlobalHouse_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B220D1E0ED29D0C3EECAC9B1 /* Pods-GlobalHouse_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalHouse_Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GlobalHouse_Swift/Pods-GlobalHouse_Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		B5383DC2205934EF0056C019 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		B5383DC42059444A0056C019 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		B5510EB2204E5F2E00D0D5F8 /* GlobalHouse_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlobalHouse_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5510EB5204E5F2E00D0D5F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5510EB7204E5F2E00D0D5F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +126,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B5383DC1205934910056C019 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B5383DC2205934EF0056C019 /* NetworkRequest.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		B5510EA9204E5F2E00D0D5F8 = {
 			isa = PBXGroup;
 			children = (
@@ -147,8 +159,9 @@
 		B5510EB4204E5F2E00D0D5F8 /* GlobalHouse_Swift */ = {
 			isa = PBXGroup;
 			children = (
-				B5510EE4204E647700D0D5F8 /* BaseController */,
 				B5510EE5204E647700D0D5F8 /* Constant */,
+				B5383DC1205934910056C019 /* Network */,
+				B5510EE4204E647700D0D5F8 /* BaseController */,
 				B5510EE3204E647700D0D5F8 /* ItemController */,
 				B5510EB7204E5F2E00D0D5F8 /* ViewController.swift */,
 				B5510EB9204E5F2E00D0D5F8 /* Main.storyboard */,
@@ -230,6 +243,7 @@
 		B5510EF1204E7D6600D0D5F8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B5383DC42059444A0056C019 /* Device.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -426,6 +440,7 @@
 		B5510EAA204E5F2E00D0D5F8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = "";
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = yueyi;
@@ -507,6 +522,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-GlobalHouse_Swift/Pods-GlobalHouse_Swift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/RTRootNavigationController/RTRootNavigationController.framework",
@@ -516,6 +532,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RTRootNavigationController.framework",
@@ -569,11 +586,13 @@
 				B5510EB8204E5F2E00D0D5F8 /* ViewController.swift in Sources */,
 				B5510EEC204E7B0700D0D5F8 /* BaseViewController.swift in Sources */,
 				B5510EEE204E7B2300D0D5F8 /* BaseTabBarController.swift in Sources */,
+				B5383DC52059444A0056C019 /* Device.swift in Sources */,
 				B5510EE8204E657600D0D5F8 /* BaseNavController.swift in Sources */,
 				B5510EB6204E5F2E00D0D5F8 /* AppDelegate.swift in Sources */,
 				B5510F0D204E7DAB00D0D5F8 /* HomeViewController.swift in Sources */,
 				B5510F05204E7D9300D0D5F8 /* ModelViewController.swift in Sources */,
 				B5510F10204E908D00D0D5F8 /* GHDefine.swift in Sources */,
+				B5383DC3205934EF0056C019 /* NetworkRequest.swift in Sources */,
 				B5510F09204E7DA000D0D5F8 /* MyViewController.swift in Sources */,
 				B5510F01204E7D8300D0D5F8 /* ManageViewController.swift in Sources */,
 			);
