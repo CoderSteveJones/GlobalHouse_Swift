@@ -3,6 +3,7 @@ PODS:
   - AlamofireObjectMapper (5.0.0):
     - Alamofire (~> 4.1)
     - ObjectMapper (~> 3.0)
+  - CRRefresh (1.0.6)
   - HandyJSON (4.0.0-beta.1)
   - IQKeyboardManagerSwift (5.0.7)
   - Kingfisher (4.6.3)
@@ -14,6 +15,7 @@ PODS:
 
 DEPENDENCIES:
   - AlamofireObjectMapper (~> 5.0)
+  - CRRefresh
   - HandyJSON (~> 4.0.0-beta.1)
   - IQKeyboardManagerSwift
   - Kingfisher
@@ -23,6 +25,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
   AlamofireObjectMapper: 5fafc816351cbbc0d486611aaeba7461c0cbad49
+  CRRefresh: fa89bab742592500ce9f76301c152544ec5264e8
   HandyJSON: 428bb18e2c34c2a77361accebf90cf64e4f74118
   IQKeyboardManagerSwift: 30fb3a61de1af53a95e02b80fb54ed0a19d5ede5
   Kingfisher: 98e6d5b5e807645743e8ed5ececd25d688d38452
@@ -30,6 +33,6 @@ SPEC CHECKSUMS:
   RTRootNavigationController: 1429554f853e8319a383849befed73d5dc58a108
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: a8d028e64af5122a7eaf8022ff5af8ea33c02296
+PODFILE CHECKSUM: 10b1faf7a5796509dca2730fcbff992d3fb3dca4
 
 COCOAPODS: 1.4.0

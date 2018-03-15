@@ -15,11 +15,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         view.backgroundColor = UIColor.white
         
-        
-        
     }
-
-    
+   
+   
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         KJAlertView.showAlertView("确定出现吗？", cancelEvent: {
             
