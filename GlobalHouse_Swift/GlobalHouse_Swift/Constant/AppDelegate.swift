@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,14 +17,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+//        window = UIWindow(frame: UIScreen.main.bounds)
+//        let tabbarController = BaseTabBarController()
+//        let rootVC = RTRootNavigationController(rootViewControllerNoWrapping: tabbarController)
+//        window?.rootViewController = rootVC
+//        window?.makeKeyAndVisible()
+        
+        
+        // 测试代码
         window = UIWindow(frame: UIScreen.main.bounds)
-        let tabbarController = BaseTabBarController()
-        let rootVC = RTRootNavigationController(rootViewControllerNoWrapping: tabbarController)
-        window?.rootViewController = rootVC
+        window?.rootViewController = ViewController()
         window?.makeKeyAndVisible()
+        
+        
+        
+        // 键盘配置
+        configKeyBoard()
+        
         return true
     }
 
+    
+    func configKeyBoard() {
+        
+        let mgr = IQKeyboardManager.sharedManager()
+        mgr.enable = true
+        mgr.shouldResignOnTouchOutside = true
+        mgr.enableAutoToolbar = false
+        mgr.shouldToolbarUsesTextFieldTintColor = true
+    }
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.

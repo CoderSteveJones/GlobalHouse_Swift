@@ -7,4 +7,5 @@ pod 'Kingfisher'
 pod 'RTRootNavigationController'
 pod 'SVProgressHUD'
 pod 'HandyJSON', '~> 4.0.0-beta.1'
+pod 'IQKeyboardManagerSwift'
 end
