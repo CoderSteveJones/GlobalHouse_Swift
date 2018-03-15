@@ -10,64 +10,37 @@ import UIKit
 
 class HomeViewController: BaseViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view
         title = "主页"
         
-        let urlStr = "http://192.168.2.162:6060/User"
-        let par = ["action" : "getUserDeviceList",
-                   "userId" : "5e54613846b647fa81301785282b5c46",
-                     "page" : "1",
-                 "pageSize" : "10"]
-        
-//        NetworkRequest.sharedInstance.postRequest(urlString: urlStr, params: par, success: { (response) in
-//            let str = response["code"] as! String
-//            if str == "0000" {
-//                let dataArr = response["data"] as! [Any]
-//                if let devices = [Device].deserialize(from: dataArr){
-//                    if let device = devices[0] {
-//                        print(device.showName)
-//                    }
-//                }
-//
-//            }
-//        }) { (error) in
-//            SVProgressHUD.showError(withStatus: error.localizedDescription)
-//        }
-        
-        
-        NetworkRequest.sharedInstance.getRequest(urlString: urlStr, params: par, success: { (response) in
-            let str = response["code"] as! String
-            if str == "0000" {
-                let dataArr = response["data"] as! [Any]
-                if let devices = [Device].deserialize(from: dataArr){
-                    if let device = devices[0] {
-                        print(device.showName)
-                    }
-                }
-            }else {
-                
-            }
-        }) { (error) in
-            SVProgressHUD.showError(withStatus: error.localizedDescription)
+       
+    }
+    
+    // MARK: - UITableViewDataSource
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 20
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cellID = "cellID"
+        var cell = tableView.dequeueReusableCell(withIdentifier: cellID)
+        if cell == nil {
+            cell = UITableViewCell(style: .value1, reuseIdentifier: cellID)
         }
+        cell?.textLabel?.text = "\(indexPath.row)" + "行"
+        return cell!
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    // MARK: - UITableViewDelegate
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }

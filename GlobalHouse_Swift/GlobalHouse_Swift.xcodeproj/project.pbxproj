@@ -32,6 +32,7 @@
 		B5510F0D204E7DAB00D0D5F8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5510F0B204E7DAB00D0D5F8 /* HomeViewController.swift */; };
 		B5510F0E204E7DAB00D0D5F8 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5510F0C204E7DAB00D0D5F8 /* HomeViewController.xib */; };
 		B5510F10204E908D00D0D5F8 /* GHDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5510F0F204E908D00D0D5F8 /* GHDefine.swift */; };
+		B5522ED1205A4B7C00F69ABE /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5522ED0205A4B7C00F69ABE /* ViewController.xib */; };
 		B5706D28204F7A51007E45D2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5706D29204F7A51007E45D2 /* Alamofire.framework */; };
 		F18BEA4F3D32BF6F8A64291B /* Pods_GlobalHouse_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84DB4E913A651F1AE79889CB /* Pods_GlobalHouse_Swift.framework */; };
 /* End PBXBuildFile section */
@@ -103,6 +104,7 @@
 		B5510F0B204E7DAB00D0D5F8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B5510F0C204E7DAB00D0D5F8 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		B5510F0F204E908D00D0D5F8 /* GHDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHDefine.swift; sourceTree = "<group>"; };
+		B5522ED0205A4B7C00F69ABE /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		B5706D20204F770F007E45D2 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5706D29204F7A51007E45D2 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -200,6 +202,7 @@
 				B5510EE4204E647700D0D5F8 /* BaseController */,
 				B5510EE3204E647700D0D5F8 /* ItemController */,
 				B5510EB7204E5F2E00D0D5F8 /* ViewController.swift */,
+				B5522ED0205A4B7C00F69ABE /* ViewController.xib */,
 				B5510EB9204E5F2E00D0D5F8 /* Main.storyboard */,
 				B5510EBC204E5F2E00D0D5F8 /* Assets.xcassets */,
 				B5510EBE204E5F2E00D0D5F8 /* LaunchScreen.storyboard */,
@@ -523,6 +526,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5522ED1205A4B7C00F69ABE /* ViewController.xib in Resources */,
 				B5510EC0204E5F2E00D0D5F8 /* LaunchScreen.storyboard in Resources */,
 				B51EDB84205A1C03004B697A /* KJAlertView.xib in Resources */,
 				B5510F02204E7D8300D0D5F8 /* ManageViewController.xib in Resources */,

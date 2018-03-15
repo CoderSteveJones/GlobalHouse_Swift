@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="GlobalHouse_Swift" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="Axd-3u-Sfu" id="wTq-2n-Xuc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,8 +19,25 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Axd-3u-Sfu">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Hel-oo-Rrs"/>
+                        <outlet property="delegate" destination="-1" id="u2g-JN-seB"/>
+                    </connections>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" red="0.2392156869" green="0.67450982329999998" blue="0.96862745289999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Axd-3u-Sfu" secondAttribute="trailing" id="Efj-nQ-rfy"/>
+                <constraint firstItem="Axd-3u-Sfu" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="b2y-oe-MkC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Axd-3u-Sfu" secondAttribute="bottom" id="dhi-5u-uQf"/>
+                <constraint firstItem="Axd-3u-Sfu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hy3-kD-58E"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-512" y="19"/>
         </view>
     </objects>
 </document>
