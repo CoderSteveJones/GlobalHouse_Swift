@@ -31,7 +31,7 @@ class KJAlertView: UIView {
     ///   - title: 标题
     ///   - cancelEvent: 取消操作
     ///   - sureEvent: 确定操作
-    class func showAlertView(_ title: String,cancelEvent: @escaping ()->(),sureEvent: @escaping ()->()){
+    static func showAlertView(_ title: String,cancelEvent: @escaping ()->(),sureEvent: @escaping ()->()){
         
         let alertView = Bundle.main.loadNibNamed("KJAlertView", owner: self, options: nil)![0] as! KJAlertView
         alertView.titleLabel.text = title

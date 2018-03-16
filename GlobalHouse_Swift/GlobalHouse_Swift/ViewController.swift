@@ -9,15 +9,10 @@
 import UIKit
 
 
-
 class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
 
-    enum Sex {
-        case man
-        case woman
-    }
-    
-    
+   
+    private lazy var names = ["hahah","嗯嗯嗯","年后"]
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -26,15 +21,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         // Do any additional setup after loading the view, typically from a nib.
         view.backgroundColor = UIColor.white
         
-     
-        var s = Sex.man
-        
-        switch s {
-        case .man:
-            print("男")
-        case .woman:
-            print("女")
-        }
+        tableView.register(UINib.init(nibName: "TestCell", bundle: nil), forCellReuseIdentifier: "cellID")
         
     
     }
@@ -43,17 +30,13 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
    
     // MARK: - UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
+        return names.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellID = "cellID"
-        var cell = tableView.dequeueReusableCell(withIdentifier: cellID)
-        if cell == nil {
-            cell = UITableViewCell(style: .value1, reuseIdentifier: cellID)
-        }
-        cell?.textLabel?.text = "\(indexPath.row)" + "行"
-        return cell!
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellID", for: indexPath) as! TestCell
+        cell.name = names[indexPath.row]
+        return cell
     }
     
     // MARK: - UITableViewDelegate
