@@ -11,6 +11,7 @@
 		B51EDB7E205A1384004B697A /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B51EDB7C205A1384004B697A /* TestViewController.xib */; };
 		B51EDB82205A1BF9004B697A /* KJAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51EDB81205A1BF9004B697A /* KJAlertView.swift */; };
 		B51EDB84205A1C03004B697A /* KJAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B51EDB83205A1C03004B697A /* KJAlertView.xib */; };
+		B521ED82205B5171005D5131 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B521ED81205B5171005D5131 /* UIViewExtension.swift */; };
 		B5383DC3205934EF0056C019 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5383DC2205934EF0056C019 /* NetworkRequest.swift */; };
 		B5383DC52059444A0056C019 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5383DC42059444A0056C019 /* Device.swift */; };
 		B5510EB6204E5F2E00D0D5F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5510EB5204E5F2E00D0D5F8 /* AppDelegate.swift */; };
@@ -33,6 +34,8 @@
 		B5510F0E204E7DAB00D0D5F8 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5510F0C204E7DAB00D0D5F8 /* HomeViewController.xib */; };
 		B5510F10204E908D00D0D5F8 /* GHDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5510F0F204E908D00D0D5F8 /* GHDefine.swift */; };
 		B5522ED1205A4B7C00F69ABE /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5522ED0205A4B7C00F69ABE /* ViewController.xib */; };
+		B5522ED4205A518300F69ABE /* TestChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5522ED2205A518300F69ABE /* TestChildViewController.swift */; };
+		B5522ED5205A518300F69ABE /* TestChildViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5522ED3205A518300F69ABE /* TestChildViewController.xib */; };
 		B5706D28204F7A51007E45D2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5706D29204F7A51007E45D2 /* Alamofire.framework */; };
 		F18BEA4F3D32BF6F8A64291B /* Pods_GlobalHouse_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84DB4E913A651F1AE79889CB /* Pods_GlobalHouse_Swift.framework */; };
 /* End PBXBuildFile section */
@@ -75,6 +78,7 @@
 		B51EDB7C205A1384004B697A /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 		B51EDB81205A1BF9004B697A /* KJAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KJAlertView.swift; sourceTree = "<group>"; };
 		B51EDB83205A1C03004B697A /* KJAlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KJAlertView.xib; sourceTree = "<group>"; };
+		B521ED81205B5171005D5131 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		B5383DC2205934EF0056C019 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		B5383DC42059444A0056C019 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		B5510EB2204E5F2E00D0D5F8 /* GlobalHouse_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlobalHouse_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +109,8 @@
 		B5510F0C204E7DAB00D0D5F8 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		B5510F0F204E908D00D0D5F8 /* GHDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHDefine.swift; sourceTree = "<group>"; };
 		B5522ED0205A4B7C00F69ABE /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		B5522ED2205A518300F69ABE /* TestChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestChildViewController.swift; sourceTree = "<group>"; };
+		B5522ED3205A518300F69ABE /* TestChildViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestChildViewController.xib; sourceTree = "<group>"; };
 		B5706D20204F770F007E45D2 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5706D29204F7A51007E45D2 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -163,6 +169,14 @@
 			path = "弹出框";
 			sourceTree = "<group>";
 		};
+		B521ED80205B5157005D5131 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B521ED81205B5171005D5131 /* UIViewExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		B5383DC1205934910056C019 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				B5510EE5204E647700D0D5F8 /* Constant */,
+				B521ED80205B5157005D5131 /* Extension */,
 				B5383DC1205934910056C019 /* Network */,
 				B51EDB7F205A1BD3004B697A /* 自定义View */,
 				B5510EE4204E647700D0D5F8 /* BaseController */,
@@ -276,6 +291,8 @@
 			children = (
 				B5510F0B204E7DAB00D0D5F8 /* HomeViewController.swift */,
 				B5510F0C204E7DAB00D0D5F8 /* HomeViewController.xib */,
+				B5522ED2205A518300F69ABE /* TestChildViewController.swift */,
+				B5522ED3205A518300F69ABE /* TestChildViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -529,6 +546,7 @@
 				B5522ED1205A4B7C00F69ABE /* ViewController.xib in Resources */,
 				B5510EC0204E5F2E00D0D5F8 /* LaunchScreen.storyboard in Resources */,
 				B51EDB84205A1C03004B697A /* KJAlertView.xib in Resources */,
+				B5522ED5205A518300F69ABE /* TestChildViewController.xib in Resources */,
 				B5510F02204E7D8300D0D5F8 /* ManageViewController.xib in Resources */,
 				B5510F0A204E7DA000D0D5F8 /* MyViewController.xib in Resources */,
 				B5510EBD204E5F2E00D0D5F8 /* Assets.xcassets in Resources */,
@@ -636,10 +654,12 @@
 				B5383DC52059444A0056C019 /* Device.swift in Sources */,
 				B5510EE8204E657600D0D5F8 /* BaseNavController.swift in Sources */,
 				B51EDB7D205A1384004B697A /* TestViewController.swift in Sources */,
+				B521ED82205B5171005D5131 /* UIViewExtension.swift in Sources */,
 				B51EDB82205A1BF9004B697A /* KJAlertView.swift in Sources */,
 				B5510EB6204E5F2E00D0D5F8 /* AppDelegate.swift in Sources */,
 				B5510F0D204E7DAB00D0D5F8 /* HomeViewController.swift in Sources */,
 				B5510F05204E7D9300D0D5F8 /* ModelViewController.swift in Sources */,
+				B5522ED4205A518300F69ABE /* TestChildViewController.swift in Sources */,
 				B5510F10204E908D00D0D5F8 /* GHDefine.swift in Sources */,
 				B5383DC3205934EF0056C019 /* NetworkRequest.swift in Sources */,
 				B5510F09204E7DA000D0D5F8 /* MyViewController.swift in Sources */,

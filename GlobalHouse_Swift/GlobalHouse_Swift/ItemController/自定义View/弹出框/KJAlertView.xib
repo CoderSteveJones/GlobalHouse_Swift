@@ -80,7 +80,7 @@
                 <outlet property="sureBtn" destination="N9r-r3-a3B" id="gwV-OB-6wK"/>
                 <outlet property="titleLabel" destination="L1h-rT-BPe" id="Hjw-Q2-kZS"/>
             </connections>
-            <point key="canvasLocation" x="-398" y="-47"/>
+            <point key="canvasLocation" x="-75" y="-30"/>
         </view>
     </objects>
 </document>

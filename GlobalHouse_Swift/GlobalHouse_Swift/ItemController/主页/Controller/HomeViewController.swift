@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import CRRefresh
 
-class HomeViewController: BaseViewController {
+
+class HomeViewController: BaseViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -19,7 +21,25 @@ class HomeViewController: BaseViewController {
         // Do any additional setup after loading the view
         title = "主页"
         
+        tableView.cr.addHeadRefresh(animator: FastAnimator()) { [weak self] in
+             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2, execute: {
+                self?.tableView.cr.endHeaderRefresh()
+            })
+        }
        
+        tableView.cr.beginHeaderRefresh()
+        
+        tableView.cr.addFootRefresh(animator: NormalFooterAnimator()) {
+            [weak self] in
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2, execute: {
+//                /// If no more data
+//                self?.tableView.cr.noticeNoMoreData()
+                /// Reset no more data
+//                self?.tableView.cr.resetNoMore()
+                self?.tableView.cr.endLoadingMore()
+            })
+        }
+        
     }
     
     // MARK: - UITableViewDataSource
@@ -40,6 +60,11 @@ class HomeViewController: BaseViewController {
     // MARK: - UITableViewDelegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        let vc = TestChildViewController()
+        navigationController?.pushViewController(vc, animated: true)
+        
+        
     }
     
 

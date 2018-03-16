@@ -8,8 +8,15 @@
 
 import UIKit
 
+
+
 class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
 
+    enum Sex {
+        case man
+        case woman
+    }
+    
     
     
     @IBOutlet weak var tableView: UITableView!
@@ -19,7 +26,20 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         // Do any additional setup after loading the view, typically from a nib.
         view.backgroundColor = UIColor.white
         
+     
+        var s = Sex.man
+        
+        switch s {
+        case .man:
+            print("男")
+        case .woman:
+            print("女")
+        }
+        
+    
     }
+    
+   
    
     // MARK: - UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
