@@ -14,6 +14,8 @@
 		B521ED82205B5171005D5131 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B521ED81205B5171005D5131 /* UIViewExtension.swift */; };
 		B521ED85205B6DB3005D5131 /* TestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B521ED83205B6DB3005D5131 /* TestCell.swift */; };
 		B521ED86205B6DB3005D5131 /* TestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B521ED84205B6DB3005D5131 /* TestCell.xib */; };
+		B521ED88205BC67E005D5131 /* ProtocolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B521ED87205BC67E005D5131 /* ProtocolView.swift */; };
+		B521ED8A205BC6EC005D5131 /* ProtocolView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B521ED89205BC6EC005D5131 /* ProtocolView.xib */; };
 		B5383DC3205934EF0056C019 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5383DC2205934EF0056C019 /* NetworkRequest.swift */; };
 		B5383DC52059444A0056C019 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5383DC42059444A0056C019 /* Device.swift */; };
 		B5510EB6204E5F2E00D0D5F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5510EB5204E5F2E00D0D5F8 /* AppDelegate.swift */; };
@@ -39,6 +41,80 @@
 		B5522ED4205A518300F69ABE /* TestChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5522ED2205A518300F69ABE /* TestChildViewController.swift */; };
 		B5522ED5205A518300F69ABE /* TestChildViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5522ED3205A518300F69ABE /* TestChildViewController.xib */; };
 		B5706D28204F7A51007E45D2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5706D29204F7A51007E45D2 /* Alamofire.framework */; };
+		B5E31F16205C9F9C009C5609 /* .gitIgnore in Resources */ = {isa = PBXBuildFile; fileRef = B5E31EBF205C9F9C009C5609 /* .gitIgnore */; };
+		B5E31F17205C9F9C009C5609 /* bds_license.dat in Resources */ = {isa = PBXBuildFile; fileRef = B5E31ED6205C9F9C009C5609 /* bds_license.dat */; };
+		B5E31F18205C9F9C009C5609 /* bds_easr_basic_model.dat in Resources */ = {isa = PBXBuildFile; fileRef = B5E31ED7205C9F9C009C5609 /* bds_easr_basic_model.dat */; };
+		B5E31F19205C9F9C009C5609 /* bds_easr_mfe_cmvn.dat in Resources */ = {isa = PBXBuildFile; fileRef = B5E31ED8205C9F9C009C5609 /* bds_easr_mfe_cmvn.dat */; };
+		B5E31F1A205C9F9C009C5609 /* temp_license_2018-02-24.dat in Resources */ = {isa = PBXBuildFile; fileRef = B5E31ED9205C9F9C009C5609 /* temp_license_2018-02-24.dat */; };
+		B5E31F1B205C9F9C009C5609 /* bds_easr_input_model.dat in Resources */ = {isa = PBXBuildFile; fileRef = B5E31EDA205C9F9C009C5609 /* bds_easr_input_model.dat */; };
+		B5E31F1C205C9F9C009C5609 /* bds_easr_mfe_dnn.dat in Resources */ = {isa = PBXBuildFile; fileRef = B5E31EDB205C9F9C009C5609 /* bds_easr_mfe_dnn.dat */; };
+		B5E31F1D205C9F9C009C5609 /* bds_easr_gramm.dat in Resources */ = {isa = PBXBuildFile; fileRef = B5E31EDC205C9F9C009C5609 /* bds_easr_gramm.dat */; };
+		B5E31F1E205C9F9C009C5609 /* bds_easr_wakeup_words.dat in Resources */ = {isa = PBXBuildFile; fileRef = B5E31EDD205C9F9C009C5609 /* bds_easr_wakeup_words.dat */; };
+		B5E31F1F205C9F9C009C5609 /* bds_easr_dnn_wakeup_model.dat in Resources */ = {isa = PBXBuildFile; fileRef = B5E31EDE205C9F9C009C5609 /* bds_easr_dnn_wakeup_model.dat */; };
+		B5E31F20205C9F9C009C5609 /* record_end.caf in Resources */ = {isa = PBXBuildFile; fileRef = B5E31EE1205C9F9C009C5609 /* record_end.caf */; };
+		B5E31F21205C9F9C009C5609 /* record_start.caf in Resources */ = {isa = PBXBuildFile; fileRef = B5E31EE2205C9F9C009C5609 /* record_start.caf */; };
+		B5E31F22205C9F9C009C5609 /* record_cancel.caf in Resources */ = {isa = PBXBuildFile; fileRef = B5E31EE3205C9F9C009C5609 /* record_cancel.caf */; };
+		B5E31F23205C9F9C009C5609 /* record_success.caf in Resources */ = {isa = PBXBuildFile; fileRef = B5E31EE4205C9F9C009C5609 /* record_success.caf */; };
+		B5E31F24205C9F9C009C5609 /* record_fail.caf in Resources */ = {isa = PBXBuildFile; fileRef = B5E31EE5205C9F9C009C5609 /* record_fail.caf */; };
+		B5E31F25205C9F9C009C5609 /* lightBlue.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B5E31EE7205C9F9C009C5609 /* lightBlue.bundle */; };
+		B5E31F26205C9F9C009C5609 /* lightOrange.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B5E31EE8205C9F9C009C5609 /* lightOrange.bundle */; };
+		B5E31F27205C9F9C009C5609 /* darkRed.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B5E31EE9205C9F9C009C5609 /* darkRed.bundle */; };
+		B5E31F28205C9F9C009C5609 /* defaultTheme.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B5E31EEA205C9F9C009C5609 /* defaultTheme.bundle */; };
+		B5E31F29205C9F9C009C5609 /* lightGreen.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B5E31EEB205C9F9C009C5609 /* lightGreen.bundle */; };
+		B5E31F2A205C9F9C009C5609 /* darkOrange.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B5E31EEC205C9F9C009C5609 /* darkOrange.bundle */; };
+		B5E31F2B205C9F9C009C5609 /* defaultFullScreenTheme.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B5E31EED205C9F9C009C5609 /* defaultFullScreenTheme.bundle */; };
+		B5E31F2C205C9F9C009C5609 /* darkGreen.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B5E31EEE205C9F9C009C5609 /* darkGreen.bundle */; };
+		B5E31F2D205C9F9C009C5609 /* lightRed.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B5E31EEF205C9F9C009C5609 /* lightRed.bundle */; };
+		B5E31F2E205C9F9C009C5609 /* darkBlue.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B5E31EF0205C9F9C009C5609 /* darkBlue.bundle */; };
+		B5E31F2F205C9F9C009C5609 /* English_Speech_Female.dat in Resources */ = {isa = PBXBuildFile; fileRef = B5E31EF2205C9F9C009C5609 /* English_Speech_Female.dat */; };
+		B5E31F30205C9F9C009C5609 /* offline_engine_tmp_license.dat in Resources */ = {isa = PBXBuildFile; fileRef = B5E31EF3205C9F9C009C5609 /* offline_engine_tmp_license.dat */; };
+		B5E31F31205C9F9C009C5609 /* English_Text.dat in Resources */ = {isa = PBXBuildFile; fileRef = B5E31EF4205C9F9C009C5609 /* English_Text.dat */; };
+		B5E31F32205C9F9C009C5609 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B5E31EF5205C9F9C009C5609 /* .gitignore */; };
+		B5E31F33205C9F9C009C5609 /* English_Speech_Male.dat in Resources */ = {isa = PBXBuildFile; fileRef = B5E31EF6205C9F9C009C5609 /* English_Speech_Male.dat */; };
+		B5E31F34205C9F9C009C5609 /* Chinese_Speech_Male.dat in Resources */ = {isa = PBXBuildFile; fileRef = B5E31EF7205C9F9C009C5609 /* Chinese_Speech_Male.dat */; };
+		B5E31F35205C9F9C009C5609 /* Chinese_Text.dat in Resources */ = {isa = PBXBuildFile; fileRef = B5E31EF8205C9F9C009C5609 /* Chinese_Text.dat */; };
+		B5E31F36205C9F9C009C5609 /* Chinese_Speech_Female.dat in Resources */ = {isa = PBXBuildFile; fileRef = B5E31EF9205C9F9C009C5609 /* Chinese_Speech_Female.dat */; };
+		B5E31F37205C9F9C009C5609 /* libBaiduSpeechSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E31EFB205C9F9C009C5609 /* libBaiduSpeechSDK.a */; };
+		B5E31F38205C9F9C009C5609 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B5E31EFC205C9F9C009C5609 /* .gitignore */; };
+		B5E31F39205C9F9C009C5609 /* SettingsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E31F00205C9F9C009C5609 /* SettingsTableViewCell.m */; };
+		B5E31F3A205C9F9C009C5609 /* DetailInputTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E31F01205C9F9C009C5609 /* DetailInputTableViewCell.m */; };
+		B5E31F3B205C9F9C009C5609 /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E31F09205C9F9C009C5609 /* SettingsTableViewController.m */; };
+		B5E31F3C205C9F9C009C5609 /* BDVRSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E31F0A205C9F9C009C5609 /* BDVRSettings.m */; };
+		B5E31F3D205C9F9C009C5609 /* DetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E31F0B205C9F9C009C5609 /* DetailTableViewController.m */; };
+		B5E31F3E205C9F9C009C5609 /* DetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E31F0C205C9F9C009C5609 /* DetailTableViewCell.m */; };
+		B5E31F3F205C9F9C009C5609 /* BDVRSettingsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E31F0D205C9F9C009C5609 /* BDVRSettingsItem.m */; };
+		B5E31F40205C9F9C009C5609 /* AudioInputStream.mm in Sources */ = {isa = PBXBuildFile; fileRef = B5E31F0E205C9F9C009C5609 /* AudioInputStream.mm */; };
+		B5E31F41205C9F9C009C5609 /* ASRMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5E31F11205C9F9C009C5609 /* ASRMain.storyboard */; };
+		B5E31F42205C9F9C009C5609 /* AudioDataQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B5E31F12205C9F9C009C5609 /* AudioDataQueue.cpp */; };
+		B5E31F43205C9F9C009C5609 /* .gitIgnore in Resources */ = {isa = PBXBuildFile; fileRef = B5E31F13205C9F9C009C5609 /* .gitIgnore */; };
+		B5E31F44205C9F9C009C5609 /* ASRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E31F14205C9F9C009C5609 /* ASRViewController.m */; };
+		B5E31F46205C9FD7009C5609 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E31F45205C9FD7009C5609 /* libc++.tbd */; };
+		B5E31F48205C9FE2009C5609 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E31F47205C9FE2009C5609 /* libz.1.2.5.tbd */; };
+		B5E31F4A205CA004009C5609 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E31F49205CA004009C5609 /* AudioToolbox.framework */; };
+		B5E31F4C205CA00D009C5609 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E31F4B205CA00D009C5609 /* AVFoundation.framework */; };
+		B5E31F4E205CA016009C5609 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E31F4D205CA016009C5609 /* CFNetwork.framework */; };
+		B5E31F50205CA022009C5609 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E31F4F205CA022009C5609 /* CoreLocation.framework */; };
+		B5E31F52205CA02D009C5609 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E31F51205CA02D009C5609 /* CoreTelephony.framework */; };
+		B5E31F54205CA033009C5609 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E31F53205CA033009C5609 /* SystemConfiguration.framework */; };
+		B5E31F56205CA03E009C5609 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E31F55205CA03E009C5609 /* GLKit.framework */; };
+		B5E31F58205CA05B009C5609 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E31F57205CA05B009C5609 /* libsqlite3.tbd */; };
+		B5E31F5B205CA0EC009C5609 /* BDVoiceRecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E31F59205CA0EC009C5609 /* BDVoiceRecViewController.swift */; };
+		B5E31F5C205CA0EC009C5609 /* BDVoiceRecViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5E31F5A205CA0EC009C5609 /* BDVoiceRecViewController.xib */; };
+		B5E31F60205CA9C0009C5609 /* SVProgressHUD+DoAnythingAfter.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E31F5E205CA9C0009C5609 /* SVProgressHUD+DoAnythingAfter.m */; };
+		B5E31F68205CDBF3009C5609 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E31F67205CDBF3009C5609 /* libz.tbd */; };
+		B5E31F6A205CDC03009C5609 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E31F69205CDC03009C5609 /* QuartzCore.framework */; };
+		B5E31F6C205CDC10009C5609 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E31F6B205CDC10009C5609 /* CoreText.framework */; };
+		B5E31F6E205CDC19009C5609 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E31F6D205CDC19009C5609 /* CoreGraphics.framework */; };
+		B5E31F70205CDC21009C5609 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E31F6F205CDC21009C5609 /* UIKit.framework */; };
+		B5E31F72205CDC2D009C5609 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E31F71205CDC2D009C5609 /* Foundation.framework */; };
+		B5E31F74205CDC43009C5609 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E31F73205CDC43009C5609 /* CoreMotion.framework */; };
+		B5E31F77205CDE5E009C5609 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E31F75205CDE5E009C5609 /* AlipaySDK.framework */; };
+		B5E31F78205CDE5E009C5609 /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B5E31F76205CDE5E009C5609 /* AlipaySDK.bundle */; };
+		B5E31F7D205CE04F009C5609 /* AliPayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E31F7B205CE04F009C5609 /* AliPayViewController.swift */; };
+		B5E31F7E205CE04F009C5609 /* AliPayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5E31F7C205CE04F009C5609 /* AliPayViewController.xib */; };
+		B5E31F99205CEC7A009C5609 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = B5E31F96205CEC79009C5609 /* README.txt */; };
+		B5E31F9A205CEC7A009C5609 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E31F98205CEC79009C5609 /* libWeChatSDK.a */; };
+		B5E31FA1205CF128009C5609 /* WXApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E31FA0205CF127009C5609 /* WXApiManager.m */; };
 		F18BEA4F3D32BF6F8A64291B /* Pods_GlobalHouse_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84DB4E913A651F1AE79889CB /* Pods_GlobalHouse_Swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +159,8 @@
 		B521ED81205B5171005D5131 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		B521ED83205B6DB3005D5131 /* TestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCell.swift; sourceTree = "<group>"; };
 		B521ED84205B6DB3005D5131 /* TestCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestCell.xib; sourceTree = "<group>"; };
+		B521ED87205BC67E005D5131 /* ProtocolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolView.swift; sourceTree = "<group>"; };
+		B521ED89205BC6EC005D5131 /* ProtocolView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProtocolView.xib; sourceTree = "<group>"; };
 		B5383DC2205934EF0056C019 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		B5383DC42059444A0056C019 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		B5510EB2204E5F2E00D0D5F8 /* GlobalHouse_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlobalHouse_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +195,115 @@
 		B5522ED3205A518300F69ABE /* TestChildViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestChildViewController.xib; sourceTree = "<group>"; };
 		B5706D20204F770F007E45D2 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5706D29204F7A51007E45D2 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5E31EBC205C9F9C009C5609 /* BDSWakeupParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSWakeupParameters.h; sourceTree = "<group>"; };
+		B5E31EBD205C9F9C009C5609 /* BDSASRParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSASRParameters.h; sourceTree = "<group>"; };
+		B5E31EBE205C9F9C009C5609 /* BDSEventManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSEventManager.h; sourceTree = "<group>"; };
+		B5E31EBF205C9F9C009C5609 /* .gitIgnore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitIgnore; sourceTree = "<group>"; };
+		B5E31EC0205C9F9C009C5609 /* BDSUploaderDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSUploaderDefines.h; sourceTree = "<group>"; };
+		B5E31EC1205C9F9C009C5609 /* BDSASRDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSASRDefines.h; sourceTree = "<group>"; };
+		B5E31EC2205C9F9C009C5609 /* BDSUploaderParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSUploaderParameters.h; sourceTree = "<group>"; };
+		B5E31EC3205C9F9C009C5609 /* BDSWakeupDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSWakeupDefines.h; sourceTree = "<group>"; };
+		B5E31EC5205C9F9C009C5609 /* BDRecognizerViewParamsObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDRecognizerViewParamsObject.h; sourceTree = "<group>"; };
+		B5E31EC6205C9F9C009C5609 /* BDRecognizerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDRecognizerViewController.h; sourceTree = "<group>"; };
+		B5E31EC7205C9F9C009C5609 /* BDTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDTheme.h; sourceTree = "<group>"; };
+		B5E31EC8205C9F9C009C5609 /* BDRecognizerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDRecognizerViewDelegate.h; sourceTree = "<group>"; };
+		B5E31ECA205C9F9C009C5609 /* BDSSpeechSynthesizerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSSpeechSynthesizerDelegate.h; sourceTree = "<group>"; };
+		B5E31ECB205C9F9C009C5609 /* BDS_EttsModelManagerInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDS_EttsModelManagerInterface.h; sourceTree = "<group>"; };
+		B5E31ECC205C9F9C009C5609 /* BDSBuiltInPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSBuiltInPlayer.h; sourceTree = "<group>"; };
+		B5E31ECD205C9F9C009C5609 /* BDSMixedModeSynthesizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSMixedModeSynthesizer.h; sourceTree = "<group>"; };
+		B5E31ECE205C9F9C009C5609 /* BDSSpeechSynthesizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSSpeechSynthesizer.h; sourceTree = "<group>"; };
+		B5E31ECF205C9F9C009C5609 /* BDSSpeechSynthesizerParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSSpeechSynthesizerParams.h; sourceTree = "<group>"; };
+		B5E31ED0205C9F9C009C5609 /* BDSSynthesizerLogLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSSynthesizerLogLevel.h; sourceTree = "<group>"; };
+		B5E31ED1205C9F9C009C5609 /* BDSTTSEventManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSTTSEventManager.h; sourceTree = "<group>"; };
+		B5E31ED2205C9F9C009C5609 /* BDSSpeechSynthesizerErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSSpeechSynthesizerErrors.h; sourceTree = "<group>"; };
+		B5E31ED6205C9F9C009C5609 /* bds_license.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bds_license.dat; sourceTree = "<group>"; };
+		B5E31ED7205C9F9C009C5609 /* bds_easr_basic_model.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = bds_easr_basic_model.dat; sourceTree = "<group>"; };
+		B5E31ED8205C9F9C009C5609 /* bds_easr_mfe_cmvn.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bds_easr_mfe_cmvn.dat; sourceTree = "<group>"; };
+		B5E31ED9205C9F9C009C5609 /* temp_license_2018-02-24.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "temp_license_2018-02-24.dat"; sourceTree = "<group>"; };
+		B5E31EDA205C9F9C009C5609 /* bds_easr_input_model.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = bds_easr_input_model.dat; sourceTree = "<group>"; };
+		B5E31EDB205C9F9C009C5609 /* bds_easr_mfe_dnn.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = bds_easr_mfe_dnn.dat; sourceTree = "<group>"; };
+		B5E31EDC205C9F9C009C5609 /* bds_easr_gramm.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bds_easr_gramm.dat; sourceTree = "<group>"; };
+		B5E31EDD205C9F9C009C5609 /* bds_easr_wakeup_words.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = bds_easr_wakeup_words.dat; sourceTree = "<group>"; };
+		B5E31EDE205C9F9C009C5609 /* bds_easr_dnn_wakeup_model.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = bds_easr_dnn_wakeup_model.dat; sourceTree = "<group>"; };
+		B5E31EE1205C9F9C009C5609 /* record_end.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = record_end.caf; sourceTree = "<group>"; };
+		B5E31EE2205C9F9C009C5609 /* record_start.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = record_start.caf; sourceTree = "<group>"; };
+		B5E31EE3205C9F9C009C5609 /* record_cancel.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = record_cancel.caf; sourceTree = "<group>"; };
+		B5E31EE4205C9F9C009C5609 /* record_success.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = record_success.caf; sourceTree = "<group>"; };
+		B5E31EE5205C9F9C009C5609 /* record_fail.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = record_fail.caf; sourceTree = "<group>"; };
+		B5E31EE7205C9F9C009C5609 /* lightBlue.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = lightBlue.bundle; sourceTree = "<group>"; };
+		B5E31EE8205C9F9C009C5609 /* lightOrange.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = lightOrange.bundle; sourceTree = "<group>"; };
+		B5E31EE9205C9F9C009C5609 /* darkRed.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = darkRed.bundle; sourceTree = "<group>"; };
+		B5E31EEA205C9F9C009C5609 /* defaultTheme.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = defaultTheme.bundle; sourceTree = "<group>"; };
+		B5E31EEB205C9F9C009C5609 /* lightGreen.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = lightGreen.bundle; sourceTree = "<group>"; };
+		B5E31EEC205C9F9C009C5609 /* darkOrange.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = darkOrange.bundle; sourceTree = "<group>"; };
+		B5E31EED205C9F9C009C5609 /* defaultFullScreenTheme.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = defaultFullScreenTheme.bundle; sourceTree = "<group>"; };
+		B5E31EEE205C9F9C009C5609 /* darkGreen.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = darkGreen.bundle; sourceTree = "<group>"; };
+		B5E31EEF205C9F9C009C5609 /* lightRed.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = lightRed.bundle; sourceTree = "<group>"; };
+		B5E31EF0205C9F9C009C5609 /* darkBlue.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = darkBlue.bundle; sourceTree = "<group>"; };
+		B5E31EF2205C9F9C009C5609 /* English_Speech_Female.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = English_Speech_Female.dat; sourceTree = "<group>"; };
+		B5E31EF3205C9F9C009C5609 /* offline_engine_tmp_license.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = offline_engine_tmp_license.dat; sourceTree = "<group>"; };
+		B5E31EF4205C9F9C009C5609 /* English_Text.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = English_Text.dat; sourceTree = "<group>"; };
+		B5E31EF5205C9F9C009C5609 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		B5E31EF6205C9F9C009C5609 /* English_Speech_Male.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = English_Speech_Male.dat; sourceTree = "<group>"; };
+		B5E31EF7205C9F9C009C5609 /* Chinese_Speech_Male.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = Chinese_Speech_Male.dat; sourceTree = "<group>"; };
+		B5E31EF8205C9F9C009C5609 /* Chinese_Text.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = Chinese_Text.dat; sourceTree = "<group>"; };
+		B5E31EF9205C9F9C009C5609 /* Chinese_Speech_Female.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = Chinese_Speech_Female.dat; sourceTree = "<group>"; };
+		B5E31EFB205C9F9C009C5609 /* libBaiduSpeechSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBaiduSpeechSDK.a; sourceTree = "<group>"; };
+		B5E31EFC205C9F9C009C5609 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		B5E31F00205C9F9C009C5609 /* SettingsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewCell.m; sourceTree = "<group>"; };
+		B5E31F01205C9F9C009C5609 /* DetailInputTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailInputTableViewCell.m; sourceTree = "<group>"; };
+		B5E31F02205C9F9C009C5609 /* BDVRSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDVRSettings.h; sourceTree = "<group>"; };
+		B5E31F03205C9F9C009C5609 /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
+		B5E31F04205C9F9C009C5609 /* BDVRSettingsItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDVRSettingsItem.h; sourceTree = "<group>"; };
+		B5E31F05205C9F9C009C5609 /* DetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTableViewCell.h; sourceTree = "<group>"; };
+		B5E31F06205C9F9C009C5609 /* DetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTableViewController.h; sourceTree = "<group>"; };
+		B5E31F07205C9F9C009C5609 /* SettingsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewCell.h; sourceTree = "<group>"; };
+		B5E31F08205C9F9C009C5609 /* DetailInputTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailInputTableViewCell.h; sourceTree = "<group>"; };
+		B5E31F09205C9F9C009C5609 /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
+		B5E31F0A205C9F9C009C5609 /* BDVRSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDVRSettings.m; sourceTree = "<group>"; };
+		B5E31F0B205C9F9C009C5609 /* DetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTableViewController.m; sourceTree = "<group>"; };
+		B5E31F0C205C9F9C009C5609 /* DetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTableViewCell.m; sourceTree = "<group>"; };
+		B5E31F0D205C9F9C009C5609 /* BDVRSettingsItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDVRSettingsItem.m; sourceTree = "<group>"; };
+		B5E31F0E205C9F9C009C5609 /* AudioInputStream.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AudioInputStream.mm; sourceTree = "<group>"; };
+		B5E31F0F205C9F9C009C5609 /* AudioDataQueue.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AudioDataQueue.hpp; sourceTree = "<group>"; };
+		B5E31F10205C9F9C009C5609 /* ASRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASRViewController.h; sourceTree = "<group>"; };
+		B5E31F11205C9F9C009C5609 /* ASRMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ASRMain.storyboard; sourceTree = "<group>"; };
+		B5E31F12205C9F9C009C5609 /* AudioDataQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AudioDataQueue.cpp; sourceTree = "<group>"; };
+		B5E31F13205C9F9C009C5609 /* .gitIgnore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitIgnore; sourceTree = "<group>"; };
+		B5E31F14205C9F9C009C5609 /* ASRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASRViewController.m; sourceTree = "<group>"; };
+		B5E31F15205C9F9C009C5609 /* AudioInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioInputStream.h; sourceTree = "<group>"; };
+		B5E31F45205C9FD7009C5609 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		B5E31F47205C9FE2009C5609 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		B5E31F49205CA004009C5609 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B5E31F4B205CA00D009C5609 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B5E31F4D205CA016009C5609 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B5E31F4F205CA022009C5609 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B5E31F51205CA02D009C5609 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		B5E31F53205CA033009C5609 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B5E31F55205CA03E009C5609 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		B5E31F57205CA05B009C5609 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		B5E31F59205CA0EC009C5609 /* BDVoiceRecViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BDVoiceRecViewController.swift; sourceTree = "<group>"; };
+		B5E31F5A205CA0EC009C5609 /* BDVoiceRecViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BDVoiceRecViewController.xib; sourceTree = "<group>"; };
+		B5E31F5E205CA9C0009C5609 /* SVProgressHUD+DoAnythingAfter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD+DoAnythingAfter.m"; sourceTree = "<group>"; };
+		B5E31F5F205CA9C0009C5609 /* SVProgressHUD+DoAnythingAfter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD+DoAnythingAfter.h"; sourceTree = "<group>"; };
+		B5E31F67205CDBF3009C5609 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B5E31F69205CDC03009C5609 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B5E31F6B205CDC10009C5609 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		B5E31F6D205CDC19009C5609 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B5E31F6F205CDC21009C5609 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B5E31F71205CDC2D009C5609 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B5E31F73205CDC43009C5609 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		B5E31F75205CDE5E009C5609 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
+		B5E31F76205CDE5E009C5609 /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
+		B5E31F7B205CE04F009C5609 /* AliPayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliPayViewController.swift; sourceTree = "<group>"; };
+		B5E31F7C205CE04F009C5609 /* AliPayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AliPayViewController.xib; sourceTree = "<group>"; };
+		B5E31F94205CEC79009C5609 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		B5E31F95205CEC79009C5609 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		B5E31F96205CEC79009C5609 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		B5E31F97205CEC79009C5609 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		B5E31F98205CEC79009C5609 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		B5E31F9F205CF127009C5609 /* WXApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiManager.h; sourceTree = "<group>"; };
+		B5E31FA0205CF127009C5609 /* WXApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXApiManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,8 +311,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5E31F74205CDC43009C5609 /* CoreMotion.framework in Frameworks */,
+				B5E31F4E205CA016009C5609 /* CFNetwork.framework in Frameworks */,
+				B5E31F72205CDC2D009C5609 /* Foundation.framework in Frameworks */,
+				B5E31F70205CDC21009C5609 /* UIKit.framework in Frameworks */,
+				B5E31F6E205CDC19009C5609 /* CoreGraphics.framework in Frameworks */,
+				B5E31F6C205CDC10009C5609 /* CoreText.framework in Frameworks */,
+				B5E31F6A205CDC03009C5609 /* QuartzCore.framework in Frameworks */,
+				B5E31F68205CDBF3009C5609 /* libz.tbd in Frameworks */,
+				B5E31F46205C9FD7009C5609 /* libc++.tbd in Frameworks */,
+				B5E31F58205CA05B009C5609 /* libsqlite3.tbd in Frameworks */,
+				B5E31F56205CA03E009C5609 /* GLKit.framework in Frameworks */,
+				B5E31F54205CA033009C5609 /* SystemConfiguration.framework in Frameworks */,
+				B5E31F52205CA02D009C5609 /* CoreTelephony.framework in Frameworks */,
+				B5E31F50205CA022009C5609 /* CoreLocation.framework in Frameworks */,
+				B5E31F77205CDE5E009C5609 /* AlipaySDK.framework in Frameworks */,
+				B5E31F4C205CA00D009C5609 /* AVFoundation.framework in Frameworks */,
+				B5E31F9A205CEC7A009C5609 /* libWeChatSDK.a in Frameworks */,
+				B5E31F4A205CA004009C5609 /* AudioToolbox.framework in Frameworks */,
+				B5E31F48205C9FE2009C5609 /* libz.1.2.5.tbd in Frameworks */,
 				B5706D28204F7A51007E45D2 /* Alamofire.framework in Frameworks */,
 				F18BEA4F3D32BF6F8A64291B /* Pods_GlobalHouse_Swift.framework in Frameworks */,
+				B5E31F37205C9F9C009C5609 /* libBaiduSpeechSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +365,7 @@
 		B51EDB7F205A1BD3004B697A /* 自定义View */ = {
 			isa = PBXGroup;
 			children = (
+				B521ED8B205BC7DD005D5131 /* 代理测试View */,
 				B51EDB80205A1BD3004B697A /* 弹出框 */,
 			);
 			name = "自定义View";
@@ -179,6 +387,15 @@
 				B521ED81205B5171005D5131 /* UIViewExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		B521ED8B205BC7DD005D5131 /* 代理测试View */ = {
+			isa = PBXGroup;
+			children = (
+				B521ED87205BC67E005D5131 /* ProtocolView.swift */,
+				B521ED89205BC6EC005D5131 /* ProtocolView.xib */,
+			);
+			path = "代理测试View";
 			sourceTree = "<group>";
 		};
 		B5383DC1205934910056C019 /* Network */ = {
@@ -216,6 +433,7 @@
 			children = (
 				B5510EE5204E647700D0D5F8 /* Constant */,
 				B521ED80205B5157005D5131 /* Extension */,
+				B5E31F5D205CA9B6009C5609 /* Category */,
 				B5383DC1205934910056C019 /* Network */,
 				B51EDB7F205A1BD3004B697A /* 自定义View */,
 				B5510EE4204E647700D0D5F8 /* BaseController */,
@@ -253,6 +471,8 @@
 		B5510EE3204E647700D0D5F8 /* ItemController */ = {
 			isa = PBXGroup;
 			children = (
+				B5E31F61205CDB9F009C5609 /* 支付文件 */,
+				B5E31EB5205C9F8E009C5609 /* 百度语音识别 */,
 				B51EDB7A205A1377004B697A /* 测试文件 */,
 				B5510EEF204E7D6600D0D5F8 /* 主页 */,
 				B5510EF7204E7D6600D0D5F8 /* 管理 */,
@@ -417,9 +637,331 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		B5E31EB5205C9F8E009C5609 /* 百度语音识别 */ = {
+			isa = PBXGroup;
+			children = (
+				B5E31EB9205C9F9C009C5609 /* 百度语音文件 */,
+				B5E31EB6205C9F8E009C5609 /* Controller */,
+				B5E31EB7205C9F8E009C5609 /* Model */,
+				B5E31EB8205C9F8E009C5609 /* View */,
+			);
+			path = "百度语音识别";
+			sourceTree = "<group>";
+		};
+		B5E31EB6205C9F8E009C5609 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B5E31F59205CA0EC009C5609 /* BDVoiceRecViewController.swift */,
+				B5E31F5A205CA0EC009C5609 /* BDVoiceRecViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B5E31EB7205C9F8E009C5609 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B5E31EB8205C9F8E009C5609 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B5E31EB9205C9F9C009C5609 /* 百度语音文件 */ = {
+			isa = PBXGroup;
+			children = (
+				B5E31EBA205C9F9C009C5609 /* BDSClientHeaders */,
+				B5E31ED3205C9F9C009C5609 /* BDSClientResource */,
+				B5E31EFA205C9F9C009C5609 /* BDSClientLib */,
+				B5E31EFD205C9F9C009C5609 /* CustomerFile */,
+			);
+			path = "百度语音文件";
+			sourceTree = "<group>";
+		};
+		B5E31EBA205C9F9C009C5609 /* BDSClientHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				B5E31EBB205C9F9C009C5609 /* ASR */,
+				B5E31EC9205C9F9C009C5609 /* TTS */,
+			);
+			path = BDSClientHeaders;
+			sourceTree = "<group>";
+		};
+		B5E31EBB205C9F9C009C5609 /* ASR */ = {
+			isa = PBXGroup;
+			children = (
+				B5E31EBC205C9F9C009C5609 /* BDSWakeupParameters.h */,
+				B5E31EBD205C9F9C009C5609 /* BDSASRParameters.h */,
+				B5E31EBE205C9F9C009C5609 /* BDSEventManager.h */,
+				B5E31EBF205C9F9C009C5609 /* .gitIgnore */,
+				B5E31EC0205C9F9C009C5609 /* BDSUploaderDefines.h */,
+				B5E31EC1205C9F9C009C5609 /* BDSASRDefines.h */,
+				B5E31EC2205C9F9C009C5609 /* BDSUploaderParameters.h */,
+				B5E31EC3205C9F9C009C5609 /* BDSWakeupDefines.h */,
+				B5E31EC4205C9F9C009C5609 /* UIHeaders */,
+			);
+			path = ASR;
+			sourceTree = "<group>";
+		};
+		B5E31EC4205C9F9C009C5609 /* UIHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				B5E31EC5205C9F9C009C5609 /* BDRecognizerViewParamsObject.h */,
+				B5E31EC6205C9F9C009C5609 /* BDRecognizerViewController.h */,
+				B5E31EC7205C9F9C009C5609 /* BDTheme.h */,
+				B5E31EC8205C9F9C009C5609 /* BDRecognizerViewDelegate.h */,
+			);
+			path = UIHeaders;
+			sourceTree = "<group>";
+		};
+		B5E31EC9205C9F9C009C5609 /* TTS */ = {
+			isa = PBXGroup;
+			children = (
+				B5E31ECA205C9F9C009C5609 /* BDSSpeechSynthesizerDelegate.h */,
+				B5E31ECB205C9F9C009C5609 /* BDS_EttsModelManagerInterface.h */,
+				B5E31ECC205C9F9C009C5609 /* BDSBuiltInPlayer.h */,
+				B5E31ECD205C9F9C009C5609 /* BDSMixedModeSynthesizer.h */,
+				B5E31ECE205C9F9C009C5609 /* BDSSpeechSynthesizer.h */,
+				B5E31ECF205C9F9C009C5609 /* BDSSpeechSynthesizerParams.h */,
+				B5E31ED0205C9F9C009C5609 /* BDSSynthesizerLogLevel.h */,
+				B5E31ED1205C9F9C009C5609 /* BDSTTSEventManager.h */,
+				B5E31ED2205C9F9C009C5609 /* BDSSpeechSynthesizerErrors.h */,
+			);
+			path = TTS;
+			sourceTree = "<group>";
+		};
+		B5E31ED3205C9F9C009C5609 /* BDSClientResource */ = {
+			isa = PBXGroup;
+			children = (
+				B5E31ED4205C9F9C009C5609 /* ASR */,
+				B5E31EF1205C9F9C009C5609 /* TTS */,
+			);
+			path = BDSClientResource;
+			sourceTree = "<group>";
+		};
+		B5E31ED4205C9F9C009C5609 /* ASR */ = {
+			isa = PBXGroup;
+			children = (
+				B5E31ED5205C9F9C009C5609 /* BDSClientEASRResources */,
+				B5E31EDF205C9F9C009C5609 /* BDSClientResources */,
+			);
+			path = ASR;
+			sourceTree = "<group>";
+		};
+		B5E31ED5205C9F9C009C5609 /* BDSClientEASRResources */ = {
+			isa = PBXGroup;
+			children = (
+				B5E31ED6205C9F9C009C5609 /* bds_license.dat */,
+				B5E31ED7205C9F9C009C5609 /* bds_easr_basic_model.dat */,
+				B5E31ED8205C9F9C009C5609 /* bds_easr_mfe_cmvn.dat */,
+				B5E31ED9205C9F9C009C5609 /* temp_license_2018-02-24.dat */,
+				B5E31EDA205C9F9C009C5609 /* bds_easr_input_model.dat */,
+				B5E31EDB205C9F9C009C5609 /* bds_easr_mfe_dnn.dat */,
+				B5E31EDC205C9F9C009C5609 /* bds_easr_gramm.dat */,
+				B5E31EDD205C9F9C009C5609 /* bds_easr_wakeup_words.dat */,
+				B5E31EDE205C9F9C009C5609 /* bds_easr_dnn_wakeup_model.dat */,
+			);
+			path = BDSClientEASRResources;
+			sourceTree = "<group>";
+		};
+		B5E31EDF205C9F9C009C5609 /* BDSClientResources */ = {
+			isa = PBXGroup;
+			children = (
+				B5E31EE0205C9F9C009C5609 /* Tone */,
+				B5E31EE6205C9F9C009C5609 /* Theme */,
+			);
+			path = BDSClientResources;
+			sourceTree = "<group>";
+		};
+		B5E31EE0205C9F9C009C5609 /* Tone */ = {
+			isa = PBXGroup;
+			children = (
+				B5E31EE1205C9F9C009C5609 /* record_end.caf */,
+				B5E31EE2205C9F9C009C5609 /* record_start.caf */,
+				B5E31EE3205C9F9C009C5609 /* record_cancel.caf */,
+				B5E31EE4205C9F9C009C5609 /* record_success.caf */,
+				B5E31EE5205C9F9C009C5609 /* record_fail.caf */,
+			);
+			path = Tone;
+			sourceTree = "<group>";
+		};
+		B5E31EE6205C9F9C009C5609 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				B5E31EE7205C9F9C009C5609 /* lightBlue.bundle */,
+				B5E31EE8205C9F9C009C5609 /* lightOrange.bundle */,
+				B5E31EE9205C9F9C009C5609 /* darkRed.bundle */,
+				B5E31EEA205C9F9C009C5609 /* defaultTheme.bundle */,
+				B5E31EEB205C9F9C009C5609 /* lightGreen.bundle */,
+				B5E31EEC205C9F9C009C5609 /* darkOrange.bundle */,
+				B5E31EED205C9F9C009C5609 /* defaultFullScreenTheme.bundle */,
+				B5E31EEE205C9F9C009C5609 /* darkGreen.bundle */,
+				B5E31EEF205C9F9C009C5609 /* lightRed.bundle */,
+				B5E31EF0205C9F9C009C5609 /* darkBlue.bundle */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		B5E31EF1205C9F9C009C5609 /* TTS */ = {
+			isa = PBXGroup;
+			children = (
+				B5E31EF2205C9F9C009C5609 /* English_Speech_Female.dat */,
+				B5E31EF3205C9F9C009C5609 /* offline_engine_tmp_license.dat */,
+				B5E31EF4205C9F9C009C5609 /* English_Text.dat */,
+				B5E31EF5205C9F9C009C5609 /* .gitignore */,
+				B5E31EF6205C9F9C009C5609 /* English_Speech_Male.dat */,
+				B5E31EF7205C9F9C009C5609 /* Chinese_Speech_Male.dat */,
+				B5E31EF8205C9F9C009C5609 /* Chinese_Text.dat */,
+				B5E31EF9205C9F9C009C5609 /* Chinese_Speech_Female.dat */,
+			);
+			path = TTS;
+			sourceTree = "<group>";
+		};
+		B5E31EFA205C9F9C009C5609 /* BDSClientLib */ = {
+			isa = PBXGroup;
+			children = (
+				B5E31EFB205C9F9C009C5609 /* libBaiduSpeechSDK.a */,
+				B5E31EFC205C9F9C009C5609 /* .gitignore */,
+			);
+			path = BDSClientLib;
+			sourceTree = "<group>";
+		};
+		B5E31EFD205C9F9C009C5609 /* CustomerFile */ = {
+			isa = PBXGroup;
+			children = (
+				B5E31EFE205C9F9C009C5609 /* ASR */,
+			);
+			path = CustomerFile;
+			sourceTree = "<group>";
+		};
+		B5E31EFE205C9F9C009C5609 /* ASR */ = {
+			isa = PBXGroup;
+			children = (
+				B5E31EFF205C9F9C009C5609 /* Settings */,
+				B5E31F0E205C9F9C009C5609 /* AudioInputStream.mm */,
+				B5E31F0F205C9F9C009C5609 /* AudioDataQueue.hpp */,
+				B5E31F10205C9F9C009C5609 /* ASRViewController.h */,
+				B5E31F11205C9F9C009C5609 /* ASRMain.storyboard */,
+				B5E31F12205C9F9C009C5609 /* AudioDataQueue.cpp */,
+				B5E31F13205C9F9C009C5609 /* .gitIgnore */,
+				B5E31F14205C9F9C009C5609 /* ASRViewController.m */,
+				B5E31F15205C9F9C009C5609 /* AudioInputStream.h */,
+			);
+			path = ASR;
+			sourceTree = "<group>";
+		};
+		B5E31EFF205C9F9C009C5609 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				B5E31F00205C9F9C009C5609 /* SettingsTableViewCell.m */,
+				B5E31F01205C9F9C009C5609 /* DetailInputTableViewCell.m */,
+				B5E31F02205C9F9C009C5609 /* BDVRSettings.h */,
+				B5E31F03205C9F9C009C5609 /* SettingsTableViewController.h */,
+				B5E31F04205C9F9C009C5609 /* BDVRSettingsItem.h */,
+				B5E31F05205C9F9C009C5609 /* DetailTableViewCell.h */,
+				B5E31F06205C9F9C009C5609 /* DetailTableViewController.h */,
+				B5E31F07205C9F9C009C5609 /* SettingsTableViewCell.h */,
+				B5E31F08205C9F9C009C5609 /* DetailInputTableViewCell.h */,
+				B5E31F09205C9F9C009C5609 /* SettingsTableViewController.m */,
+				B5E31F0A205C9F9C009C5609 /* BDVRSettings.m */,
+				B5E31F0B205C9F9C009C5609 /* DetailTableViewController.m */,
+				B5E31F0C205C9F9C009C5609 /* DetailTableViewCell.m */,
+				B5E31F0D205C9F9C009C5609 /* BDVRSettingsItem.m */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		B5E31F5D205CA9B6009C5609 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				B5E31F5F205CA9C0009C5609 /* SVProgressHUD+DoAnythingAfter.h */,
+				B5E31F5E205CA9C0009C5609 /* SVProgressHUD+DoAnythingAfter.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		B5E31F61205CDB9F009C5609 /* 支付文件 */ = {
+			isa = PBXGroup;
+			children = (
+				B5E31F92205CEC79009C5609 /* 微信SDK */,
+				B5E31F79205CE03B009C5609 /* 支付界面 */,
+				B5E31F62205CDB9F009C5609 /* 支付宝SDK */,
+			);
+			path = "支付文件";
+			sourceTree = "<group>";
+		};
+		B5E31F62205CDB9F009C5609 /* 支付宝SDK */ = {
+			isa = PBXGroup;
+			children = (
+				B5E31F76205CDE5E009C5609 /* AlipaySDK.bundle */,
+				B5E31F75205CDE5E009C5609 /* AlipaySDK.framework */,
+			);
+			path = "支付宝SDK";
+			sourceTree = "<group>";
+		};
+		B5E31F79205CE03B009C5609 /* 支付界面 */ = {
+			isa = PBXGroup;
+			children = (
+				B5E31F7A205CE03B009C5609 /* Controller */,
+			);
+			path = "支付界面";
+			sourceTree = "<group>";
+		};
+		B5E31F7A205CE03B009C5609 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B5E31F7B205CE04F009C5609 /* AliPayViewController.swift */,
+				B5E31F7C205CE04F009C5609 /* AliPayViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B5E31F92205CEC79009C5609 /* 微信SDK */ = {
+			isa = PBXGroup;
+			children = (
+				B5E31F9F205CF127009C5609 /* WXApiManager.h */,
+				B5E31FA0205CF127009C5609 /* WXApiManager.m */,
+				B5E31F93205CEC79009C5609 /* WechatSDK1.8.2 */,
+			);
+			path = "微信SDK";
+			sourceTree = "<group>";
+		};
+		B5E31F93205CEC79009C5609 /* WechatSDK1.8.2 */ = {
+			isa = PBXGroup;
+			children = (
+				B5E31F94205CEC79009C5609 /* WXApi.h */,
+				B5E31F95205CEC79009C5609 /* WXApiObject.h */,
+				B5E31F96205CEC79009C5609 /* README.txt */,
+				B5E31F97205CEC79009C5609 /* WechatAuthSDK.h */,
+				B5E31F98205CEC79009C5609 /* libWeChatSDK.a */,
+			);
+			path = WechatSDK1.8.2;
+			sourceTree = "<group>";
+		};
 		D4F93BEBA918D1A0AF004AE8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B5E31F73205CDC43009C5609 /* CoreMotion.framework */,
+				B5E31F71205CDC2D009C5609 /* Foundation.framework */,
+				B5E31F6F205CDC21009C5609 /* UIKit.framework */,
+				B5E31F6D205CDC19009C5609 /* CoreGraphics.framework */,
+				B5E31F6B205CDC10009C5609 /* CoreText.framework */,
+				B5E31F69205CDC03009C5609 /* QuartzCore.framework */,
+				B5E31F67205CDBF3009C5609 /* libz.tbd */,
+				B5E31F57205CA05B009C5609 /* libsqlite3.tbd */,
+				B5E31F55205CA03E009C5609 /* GLKit.framework */,
+				B5E31F53205CA033009C5609 /* SystemConfiguration.framework */,
+				B5E31F51205CA02D009C5609 /* CoreTelephony.framework */,
+				B5E31F4F205CA022009C5609 /* CoreLocation.framework */,
+				B5E31F4D205CA016009C5609 /* CFNetwork.framework */,
+				B5E31F4B205CA00D009C5609 /* AVFoundation.framework */,
+				B5E31F49205CA004009C5609 /* AudioToolbox.framework */,
+				B5E31F47205C9FE2009C5609 /* libz.1.2.5.tbd */,
+				B5E31F45205C9FD7009C5609 /* libc++.tbd */,
 				B5706D29204F7A51007E45D2 /* Alamofire.framework */,
 				B5706D20204F770F007E45D2 /* Alamofire.framework */,
 				B5510EEA204E6AAC00D0D5F8 /* SVProgressHUD.framework */,
@@ -549,18 +1091,59 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5E31F99205CEC7A009C5609 /* README.txt in Resources */,
+				B5E31F16205C9F9C009C5609 /* .gitIgnore in Resources */,
+				B5E31F1F205C9F9C009C5609 /* bds_easr_dnn_wakeup_model.dat in Resources */,
+				B5E31F33205C9F9C009C5609 /* English_Speech_Male.dat in Resources */,
+				B5E31F21205C9F9C009C5609 /* record_start.caf in Resources */,
+				B5E31F31205C9F9C009C5609 /* English_Text.dat in Resources */,
 				B5522ED1205A4B7C00F69ABE /* ViewController.xib in Resources */,
+				B5E31F78205CDE5E009C5609 /* AlipaySDK.bundle in Resources */,
 				B5510EC0204E5F2E00D0D5F8 /* LaunchScreen.storyboard in Resources */,
+				B5E31F18205C9F9C009C5609 /* bds_easr_basic_model.dat in Resources */,
+				B5E31F19205C9F9C009C5609 /* bds_easr_mfe_cmvn.dat in Resources */,
+				B5E31F22205C9F9C009C5609 /* record_cancel.caf in Resources */,
 				B51EDB84205A1C03004B697A /* KJAlertView.xib in Resources */,
+				B5E31F36205C9F9C009C5609 /* Chinese_Speech_Female.dat in Resources */,
+				B5E31F1D205C9F9C009C5609 /* bds_easr_gramm.dat in Resources */,
+				B5E31F26205C9F9C009C5609 /* lightOrange.bundle in Resources */,
+				B5E31F43205C9F9C009C5609 /* .gitIgnore in Resources */,
+				B5E31F1E205C9F9C009C5609 /* bds_easr_wakeup_words.dat in Resources */,
+				B5E31F25205C9F9C009C5609 /* lightBlue.bundle in Resources */,
+				B5E31F2D205C9F9C009C5609 /* lightRed.bundle in Resources */,
 				B5522ED5205A518300F69ABE /* TestChildViewController.xib in Resources */,
+				B5E31F7E205CE04F009C5609 /* AliPayViewController.xib in Resources */,
+				B5E31F1B205C9F9C009C5609 /* bds_easr_input_model.dat in Resources */,
+				B5E31F5C205CA0EC009C5609 /* BDVoiceRecViewController.xib in Resources */,
+				B5E31F20205C9F9C009C5609 /* record_end.caf in Resources */,
+				B5E31F41205C9F9C009C5609 /* ASRMain.storyboard in Resources */,
 				B5510F02204E7D8300D0D5F8 /* ManageViewController.xib in Resources */,
+				B5E31F2A205C9F9C009C5609 /* darkOrange.bundle in Resources */,
+				B5E31F29205C9F9C009C5609 /* lightGreen.bundle in Resources */,
+				B5E31F34205C9F9C009C5609 /* Chinese_Speech_Male.dat in Resources */,
 				B521ED86205B6DB3005D5131 /* TestCell.xib in Resources */,
+				B5E31F32205C9F9C009C5609 /* .gitignore in Resources */,
+				B5E31F27205C9F9C009C5609 /* darkRed.bundle in Resources */,
+				B5E31F28205C9F9C009C5609 /* defaultTheme.bundle in Resources */,
+				B5E31F2E205C9F9C009C5609 /* darkBlue.bundle in Resources */,
+				B5E31F35205C9F9C009C5609 /* Chinese_Text.dat in Resources */,
 				B5510F0A204E7DA000D0D5F8 /* MyViewController.xib in Resources */,
+				B5E31F24205C9F9C009C5609 /* record_fail.caf in Resources */,
 				B5510EBD204E5F2E00D0D5F8 /* Assets.xcassets in Resources */,
+				B5E31F23205C9F9C009C5609 /* record_success.caf in Resources */,
+				B5E31F17205C9F9C009C5609 /* bds_license.dat in Resources */,
+				B5E31F2C205C9F9C009C5609 /* darkGreen.bundle in Resources */,
+				B521ED8A205BC6EC005D5131 /* ProtocolView.xib in Resources */,
+				B5E31F2F205C9F9C009C5609 /* English_Speech_Female.dat in Resources */,
 				B5510EBB204E5F2E00D0D5F8 /* Main.storyboard in Resources */,
+				B5E31F1A205C9F9C009C5609 /* temp_license_2018-02-24.dat in Resources */,
+				B5E31F2B205C9F9C009C5609 /* defaultFullScreenTheme.bundle in Resources */,
+				B5E31F1C205C9F9C009C5609 /* bds_easr_mfe_dnn.dat in Resources */,
+				B5E31F38205C9F9C009C5609 /* .gitignore in Resources */,
 				B5510F0E204E7DAB00D0D5F8 /* HomeViewController.xib in Resources */,
 				B51EDB7E205A1384004B697A /* TestViewController.xib in Resources */,
 				B5510F06204E7D9300D0D5F8 /* ModelViewController.xib in Resources */,
+				B5E31F30205C9F9C009C5609 /* offline_engine_tmp_license.dat in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -655,21 +1238,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5E31F3B205C9F9C009C5609 /* SettingsTableViewController.m in Sources */,
+				B521ED88205BC67E005D5131 /* ProtocolView.swift in Sources */,
+				B5E31F3D205C9F9C009C5609 /* DetailTableViewController.m in Sources */,
 				B5510EB8204E5F2E00D0D5F8 /* ViewController.swift in Sources */,
 				B5510EEC204E7B0700D0D5F8 /* BaseViewController.swift in Sources */,
+				B5E31F40205C9F9C009C5609 /* AudioInputStream.mm in Sources */,
+				B5E31F3C205C9F9C009C5609 /* BDVRSettings.m in Sources */,
+				B5E31F3E205C9F9C009C5609 /* DetailTableViewCell.m in Sources */,
+				B5E31F42205C9F9C009C5609 /* AudioDataQueue.cpp in Sources */,
 				B5510EEE204E7B2300D0D5F8 /* BaseTabBarController.swift in Sources */,
 				B5383DC52059444A0056C019 /* Device.swift in Sources */,
+				B5E31F60205CA9C0009C5609 /* SVProgressHUD+DoAnythingAfter.m in Sources */,
 				B5510EE8204E657600D0D5F8 /* BaseNavController.swift in Sources */,
+				B5E31FA1205CF128009C5609 /* WXApiManager.m in Sources */,
 				B51EDB7D205A1384004B697A /* TestViewController.swift in Sources */,
+				B5E31F3A205C9F9C009C5609 /* DetailInputTableViewCell.m in Sources */,
 				B521ED82205B5171005D5131 /* UIViewExtension.swift in Sources */,
+				B5E31F5B205CA0EC009C5609 /* BDVoiceRecViewController.swift in Sources */,
+				B5E31F39205C9F9C009C5609 /* SettingsTableViewCell.m in Sources */,
 				B51EDB82205A1BF9004B697A /* KJAlertView.swift in Sources */,
 				B5510EB6204E5F2E00D0D5F8 /* AppDelegate.swift in Sources */,
 				B5510F0D204E7DAB00D0D5F8 /* HomeViewController.swift in Sources */,
 				B5510F05204E7D9300D0D5F8 /* ModelViewController.swift in Sources */,
 				B5522ED4205A518300F69ABE /* TestChildViewController.swift in Sources */,
 				B5510F10204E908D00D0D5F8 /* GHDefine.swift in Sources */,
+				B5E31F7D205CE04F009C5609 /* AliPayViewController.swift in Sources */,
 				B5383DC3205934EF0056C019 /* NetworkRequest.swift in Sources */,
+				B5E31F44205C9F9C009C5609 /* ASRViewController.m in Sources */,
 				B5510F09204E7DA000D0D5F8 /* MyViewController.swift in Sources */,
+				B5E31F3F205C9F9C009C5609 /* BDVRSettingsItem.m in Sources */,
 				B5510F01204E7D8300D0D5F8 /* ManageViewController.swift in Sources */,
 				B521ED85205B6DB3005D5131 /* TestCell.swift in Sources */,
 			);
@@ -840,9 +1438,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3XCDD43W6H;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GlobalHouse_Swift/ItemController/支付文件/支付宝SDK",
+				);
 				INFOPLIST_FILE = GlobalHouse_Swift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GlobalHouse_Swift/ItemController/百度语音识别/百度语音文件/BDSClientLib",
+					"$(PROJECT_DIR)/GlobalHouse_Swift/ItemController/支付文件/微信SDK/WechatSDK1.8.2",
+				);
+				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yueyi.GlobalHouse-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
@@ -860,9 +1468,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3XCDD43W6H;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GlobalHouse_Swift/ItemController/支付文件/支付宝SDK",
+				);
 				INFOPLIST_FILE = GlobalHouse_Swift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GlobalHouse_Swift/ItemController/百度语音识别/百度语音文件/BDSClientLib",
+					"$(PROJECT_DIR)/GlobalHouse_Swift/ItemController/支付文件/微信SDK/WechatSDK1.8.2",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yueyi.GlobalHouse-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = YES;

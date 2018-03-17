@@ -22,7 +22,6 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         view.backgroundColor = UIColor.white
         
         tableView.register(UINib.init(nibName: "TestCell", bundle: nil), forCellReuseIdentifier: "cellID")
-        
     
     }
     

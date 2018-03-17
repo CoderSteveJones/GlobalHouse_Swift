@@ -17,11 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        window = UIWindow(frame: UIScreen.main.bounds)
-        let tabbarController = BaseTabBarController()
-        let rootVC = RTRootNavigationController(rootViewControllerNoWrapping: tabbarController)
-        window?.rootViewController = rootVC
-        window?.makeKeyAndVisible()
+//        window = UIWindow(frame: UIScreen.main.bounds)
+//        let tabbarController = BaseTabBarController()
+//        let rootVC = RTRootNavigationController(rootViewControllerNoWrapping: tabbarController)
+//        window?.rootViewController = rootVC
+//        window?.makeKeyAndVisible()
         
         
         // 测试代码
@@ -29,6 +29,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        window?.rootViewController = ViewController()
 //        window?.makeKeyAndVisible()
         
+        // 百度语音测试代码
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = BDVoiceRecViewController()
+        window?.makeKeyAndVisible()
         
         
         // 键盘配置
@@ -37,14 +41,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
-    
-    func configKeyBoard() {
+    /// 键盘配置
+    fileprivate func configKeyBoard() {
         
         let mgr = IQKeyboardManager.sharedManager()
         mgr.enable = true
         mgr.shouldResignOnTouchOutside = true
         mgr.enableAutoToolbar = false
         mgr.shouldToolbarUsesTextFieldTintColor = true
+    }
+    
+    fileprivate func configWXPay(){
+        
     }
     
     func applicationWillResignActive(_ application: UIApplication) {
@@ -68,7 +76,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
 
-
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        
+        handldAliPay(url: url)
+        handldAliPay(url: url)
+        return true
+    }
+    
 }
 
+extension AppDelegate {
+    
+    // 支付宝回调
+    fileprivate func handldAliPay(url: URL) {
+        if url.host == "safepay" {
+            AlipaySDK.defaultService().processOrder(withPaymentResult: url, standbyCallback: { (result) in
+                if let getResult = result {
+                    DebugLog(item: getResult)
+                }
+            })
+        }
+    }
+    
+    // 微信支付回调
+    fileprivate func handWXPay(url: URL) {
+        WXApi.handleOpen(url, delegate: WXApiManager.shared())
+    }
+    
+}

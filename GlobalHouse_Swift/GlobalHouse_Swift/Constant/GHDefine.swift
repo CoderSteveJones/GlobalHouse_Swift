@@ -8,10 +8,30 @@
 
 import Foundation
 
+// 百度语音参数
+let BDVoiceAppID = "10941493"
+let BDVoiceApiKey = "VVzTACkmPRnZ91txRrL4nZbW"
+let BDVoiceSecretKey = "71c77bc579eebb075854961bfe51544f"
+
+
+// 微信APPID
+let wxAppid = ""
+
+
 // 屏幕的物理宽度
 let kScreenW = UIScreen.main.bounds.size.width
 // 屏幕的物理高度
 let kScreenH = UIScreen.main.bounds.size.width
+
+
+func DebugLog(item: Any) {
+    
+    #if DEBUG
+        print(item)
+    #else
+    
+    #endif
+}
 
 
 /// 获取状态栏高度
