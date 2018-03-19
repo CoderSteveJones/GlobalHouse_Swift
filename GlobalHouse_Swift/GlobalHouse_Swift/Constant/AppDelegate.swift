@@ -30,10 +30,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        window?.makeKeyAndVisible()
         
         // 百度语音测试代码
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = BDVoiceRecViewController()
-        window?.makeKeyAndVisible()
+//        window = UIWindow(frame: UIScreen.main.bounds)
+//        window?.rootViewController = BDVoiceRecViewController()
+//        window?.makeKeyAndVisible()
         
+        // 协议测试代码
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = ProtocolTestViewController()
+        window?.makeKeyAndVisible()
+
         
         // 键盘配置
         configKeyBoard()

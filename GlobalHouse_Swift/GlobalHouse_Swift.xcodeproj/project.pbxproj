@@ -115,6 +115,9 @@
 		B5E31F99205CEC7A009C5609 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = B5E31F96205CEC79009C5609 /* README.txt */; };
 		B5E31F9A205CEC7A009C5609 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E31F98205CEC79009C5609 /* libWeChatSDK.a */; };
 		B5E31FA1205CF128009C5609 /* WXApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E31FA0205CF127009C5609 /* WXApiManager.m */; };
+		B5E31FA3205CFCC4009C5609 /* MyTestProocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E31FA2205CFCC4009C5609 /* MyTestProocol.swift */; };
+		B5E31FAB205CFD57009C5609 /* ProtocolTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E31FA9205CFD57009C5609 /* ProtocolTestViewController.swift */; };
+		B5E31FAC205CFD57009C5609 /* ProtocolTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5E31FAA205CFD57009C5609 /* ProtocolTestViewController.xib */; };
 		F18BEA4F3D32BF6F8A64291B /* Pods_GlobalHouse_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84DB4E913A651F1AE79889CB /* Pods_GlobalHouse_Swift.framework */; };
 /* End PBXBuildFile section */
 
@@ -304,6 +307,9 @@
 		B5E31F98205CEC79009C5609 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
 		B5E31F9F205CF127009C5609 /* WXApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiManager.h; sourceTree = "<group>"; };
 		B5E31FA0205CF127009C5609 /* WXApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXApiManager.m; sourceTree = "<group>"; };
+		B5E31FA2205CFCC4009C5609 /* MyTestProocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTestProocol.swift; sourceTree = "<group>"; };
+		B5E31FA9205CFD57009C5609 /* ProtocolTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolTestViewController.swift; sourceTree = "<group>"; };
+		B5E31FAA205CFD57009C5609 /* ProtocolTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProtocolTestViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -367,6 +373,7 @@
 			children = (
 				B521ED8B205BC7DD005D5131 /* 代理测试View */,
 				B51EDB80205A1BD3004B697A /* 弹出框 */,
+				B5E31FA8205CFD3C009C5609 /* Swift协议测试 */,
 			);
 			name = "自定义View";
 			path = "ItemController/自定义View";
@@ -942,6 +949,16 @@
 			path = WechatSDK1.8.2;
 			sourceTree = "<group>";
 		};
+		B5E31FA8205CFD3C009C5609 /* Swift协议测试 */ = {
+			isa = PBXGroup;
+			children = (
+				B5E31FA2205CFCC4009C5609 /* MyTestProocol.swift */,
+				B5E31FA9205CFD57009C5609 /* ProtocolTestViewController.swift */,
+				B5E31FAA205CFD57009C5609 /* ProtocolTestViewController.xib */,
+			);
+			path = "Swift协议测试";
+			sourceTree = "<group>";
+		};
 		D4F93BEBA918D1A0AF004AE8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1121,6 +1138,7 @@
 				B5E31F2A205C9F9C009C5609 /* darkOrange.bundle in Resources */,
 				B5E31F29205C9F9C009C5609 /* lightGreen.bundle in Resources */,
 				B5E31F34205C9F9C009C5609 /* Chinese_Speech_Male.dat in Resources */,
+				B5E31FAC205CFD57009C5609 /* ProtocolTestViewController.xib in Resources */,
 				B521ED86205B6DB3005D5131 /* TestCell.xib in Resources */,
 				B5E31F32205C9F9C009C5609 /* .gitignore in Resources */,
 				B5E31F27205C9F9C009C5609 /* darkRed.bundle in Resources */,
@@ -1261,12 +1279,14 @@
 				B5510EB6204E5F2E00D0D5F8 /* AppDelegate.swift in Sources */,
 				B5510F0D204E7DAB00D0D5F8 /* HomeViewController.swift in Sources */,
 				B5510F05204E7D9300D0D5F8 /* ModelViewController.swift in Sources */,
+				B5E31FA3205CFCC4009C5609 /* MyTestProocol.swift in Sources */,
 				B5522ED4205A518300F69ABE /* TestChildViewController.swift in Sources */,
 				B5510F10204E908D00D0D5F8 /* GHDefine.swift in Sources */,
 				B5E31F7D205CE04F009C5609 /* AliPayViewController.swift in Sources */,
 				B5383DC3205934EF0056C019 /* NetworkRequest.swift in Sources */,
 				B5E31F44205C9F9C009C5609 /* ASRViewController.m in Sources */,
 				B5510F09204E7DA000D0D5F8 /* MyViewController.swift in Sources */,
+				B5E31FAB205CFD57009C5609 /* ProtocolTestViewController.swift in Sources */,
 				B5E31F3F205C9F9C009C5609 /* BDVRSettingsItem.m in Sources */,
 				B5510F01204E7D8300D0D5F8 /* ManageViewController.swift in Sources */,
 				B521ED85205B6DB3005D5131 /* TestCell.swift in Sources */,
