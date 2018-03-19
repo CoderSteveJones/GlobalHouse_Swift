@@ -12,6 +12,10 @@ PODS:
     - RTRootNavigationController/Core (= 0.6.6)
   - RTRootNavigationController/Core (0.6.6)
   - SVProgressHUD (2.2.5)
+  - UMCCommon (1.4.2)
+  - UMCPush (3.1.0):
+    - UMCCommon
+  - UMCSecurityPlugins (1.0.6)
 
 DEPENDENCIES:
   - AlamofireObjectMapper (~> 5.0)
@@ -21,6 +25,9 @@ DEPENDENCIES:
   - Kingfisher
   - RTRootNavigationController
   - SVProgressHUD
+  - UMCCommon
+  - UMCPush
+  - UMCSecurityPlugins
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
@@ -32,7 +39,10 @@ SPEC CHECKSUMS:
   ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
   RTRootNavigationController: 1429554f853e8319a383849befed73d5dc58a108
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  UMCCommon: 19f09b4c67b6007837f70f321fe091e5814d49b1
+  UMCPush: 6d67ff5ca853857e2690abbdaecb86b254b1f823
+  UMCSecurityPlugins: 0831a08f3988f3cea9f1d3a7626cd9bee4fef150
 
-PODFILE CHECKSUM: 10b1faf7a5796509dca2730fcbff992d3fb3dca4
+PODFILE CHECKSUM: b54012fc276a9de2760f767803b922c72a632ede
 
 COCOAPODS: 1.4.0

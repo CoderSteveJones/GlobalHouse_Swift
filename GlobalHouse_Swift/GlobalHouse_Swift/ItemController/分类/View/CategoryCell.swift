@@ -12,10 +12,12 @@ class CategoryCell: UITableViewCell {
 
     
     @IBOutlet weak var categoryLabel: UILabel!
-    fileprivate var borderLayer: CALayer?
+    fileprivate var borderLayer: CALayer? // 边框
     fileprivate var borderX: CGFloat = 99
     fileprivate var borderW: CGFloat = 0.5
     
+    
+    /// 赋值
     var category: DeviceCategory? {
         
         didSet {
@@ -40,8 +42,4 @@ class CategoryCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
-    
-    
-    
 }

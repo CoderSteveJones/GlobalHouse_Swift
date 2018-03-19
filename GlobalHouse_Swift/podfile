@@ -9,4 +9,10 @@ pod 'SVProgressHUD'
 pod 'HandyJSON', '~> 4.0.0-beta.1'
 pod 'IQKeyboardManagerSwift'
 pod 'CRRefresh'
+
+# 友盟sdk
+pod 'UMCCommon'
+pod 'UMCSecurityPlugins'
+pod 'UMCPush'
+
 end
