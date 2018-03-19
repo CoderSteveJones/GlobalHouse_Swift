@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="GlobalHouse_Swift" customModuleProvider="target">
             <connections>
-                <outlet property="tableView" destination="c3m-rh-Zt9" id="F6l-hG-e67"/>
+                <outlet property="cycleView" destination="O9R-XG-gh4" id="D4n-S3-eoc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,24 +20,22 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c3m-rh-Zt9">
-                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O9R-XG-gh4" customClass="ZCycleView" customModule="GlobalHouse_Swift" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="20" width="375" height="200"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <connections>
-                        <outlet property="dataSource" destination="-1" id="qwj-sC-2zk"/>
-                        <outlet property="delegate" destination="-1" id="yoQ-bx-pEb"/>
-                    </connections>
-                </tableView>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="jWo-jO-HmB"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="0.2392156869" green="0.67450982329999998" blue="0.96862745289999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="c3m-rh-Zt9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="607-KG-UuL"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="c3m-rh-Zt9" secondAttribute="bottom" id="nwG-zo-j0b"/>
-                <constraint firstItem="c3m-rh-Zt9" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="tF6-Oo-JTC"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="c3m-rh-Zt9" secondAttribute="trailing" id="trL-PV-Wfe"/>
+                <constraint firstItem="O9R-XG-gh4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Lte-V8-IAt"/>
+                <constraint firstItem="O9R-XG-gh4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="QJf-bC-ebO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="O9R-XG-gh4" secondAttribute="trailing" id="uPK-Io-KIs"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="-976" y="-41"/>
+            <point key="canvasLocation" x="-1230" y="-234"/>
         </view>
     </objects>
 </document>

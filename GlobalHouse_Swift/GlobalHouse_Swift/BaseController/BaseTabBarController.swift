@@ -17,13 +17,14 @@ class BaseTabBarController: UITabBarController {
         
         let homeVC = HomeViewController()
         setupChildVC(vc: homeVC, title: "主页", imageName: "", selectedImageName: "")
-        let manageVC = ManageViewController()
-        setupChildVC(vc: manageVC, title: "管理", imageName: "", selectedImageName: "")
-        let modelVC = ModelViewController()
-        setupChildVC(vc: modelVC, title: "模式", imageName: "", selectedImageName: "")
+        let categoryVC = CategoryViewController()
+        setupChildVC(vc: categoryVC, title: "分类", imageName: "", selectedImageName: "")
+        let discoverVC = DiscoverViewController()
+        setupChildVC(vc: discoverVC, title: "发现", imageName: "", selectedImageName: "")
+        let shopCartVC = ShopcartViewController()
+        setupChildVC(vc: shopCartVC, title: "购物车", imageName: "", selectedImageName: "")
         let myVC = MyViewController()
         setupChildVC(vc: myVC, title: "我的", imageName: "", selectedImageName: "")
-        
     }
     
     

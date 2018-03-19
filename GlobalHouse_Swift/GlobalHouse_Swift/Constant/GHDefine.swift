@@ -24,7 +24,7 @@ let kScreenW = UIScreen.main.bounds.size.width
 let kScreenH = UIScreen.main.bounds.size.width
 
 
-func DebugLog(item: Any) {
+func kPrint(item: Any) {
     
     #if DEBUG
         print(item)

@@ -1,20 +1,19 @@
 //
-//  ManageViewController.swift
+//  ShopcartViewController.swift
 //  GlobalHouse_Swift
 //
-//  Created by 江奔 on 2018/3/6.
+//  Created by 江奔 on 2018/3/19.
 //  Copyright © 2018年 yueyi. All rights reserved.
 //
 
 import UIKit
 
-class ManageViewController: BaseViewController {
+class ShopcartViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        title = "管理"
     }
 
     override func didReceiveMemoryWarning() {

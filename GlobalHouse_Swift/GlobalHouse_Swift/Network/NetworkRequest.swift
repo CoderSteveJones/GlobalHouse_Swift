@@ -25,14 +25,14 @@ extension NetworkRequest {
     ///   - params: 请求参数
     ///   - success: 成功回调
     ///   - failture: 失败回调
-    func postRequest(urlString: String,params: [String : Any],success: @escaping (_ response : [String : Any]) -> (),failture : @escaping (_ error :Error)->()) {
+    func postRequest(urlString: String,params: [String : Any]?,success: @escaping (_ response : [String : Any]) -> (),failure : @escaping (_ error :Error)->()) {
         Alamofire.request(urlString, method: .post, parameters: params, encoding: URLEncoding.httpBody, headers: nil).responseJSON { (response) in
             switch response.result {
             case .success(let value):
                 success(value as! [String : Any])
 
             case .failure(let error):
-                failture(error)
+                failure(error)
             }
             
             
@@ -46,20 +46,17 @@ extension NetworkRequest {
     ///   - params: 请求参数
     ///   - success: 成功回调
     ///   - failture: 失败回调
-    func getRequest(urlString: String,params: [String : Any],success: @escaping (_ response : [String : Any]) -> (),failture : @escaping (_ error :Error)->()) {
+    func getRequest(urlString: String,params: [String : Any]?,success: @escaping (_ response : [String : Any]) -> (),failure : @escaping (_ error :Error)->()) {
         Alamofire.request(urlString, method: .get, parameters: params, encoding: URLEncoding.default, headers: nil).responseJSON { (response) in
             switch response.result {
             case .success(let value):
                 success(value as! [String : Any])
                 
             case .failure(let error):
-                failture(error)
+                failure(error)
             }
         }
     }
-    
-    
-    
     
     
 }

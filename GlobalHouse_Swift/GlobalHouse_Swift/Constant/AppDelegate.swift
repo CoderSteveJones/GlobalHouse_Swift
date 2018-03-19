@@ -17,11 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-//        window = UIWindow(frame: UIScreen.main.bounds)
-//        let tabbarController = BaseTabBarController()
-//        let rootVC = RTRootNavigationController(rootViewControllerNoWrapping: tabbarController)
-//        window?.rootViewController = rootVC
-//        window?.makeKeyAndVisible()
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let tabbarController = BaseTabBarController()
+        let rootVC = RTRootNavigationController(rootViewControllerNoWrapping: tabbarController)
+        window?.rootViewController = rootVC
+        window?.makeKeyAndVisible()
         
         
         // 测试代码
@@ -35,9 +35,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        window?.makeKeyAndVisible()
         
         // 协议测试代码
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = ProtocolTestViewController()
-        window?.makeKeyAndVisible()
+//        window = UIWindow(frame: UIScreen.main.bounds)
+//        window?.rootViewController = ProtocolTestViewController()
+//        window?.makeKeyAndVisible()
 
         
         // 键盘配置
@@ -99,7 +99,7 @@ extension AppDelegate {
         if url.host == "safepay" {
             AlipaySDK.defaultService().processOrder(withPaymentResult: url, standbyCallback: { (result) in
                 if let getResult = result {
-                    DebugLog(item: getResult)
+                    kPrint(item: getResult)
                 }
             })
         }

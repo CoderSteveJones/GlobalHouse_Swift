@@ -80,21 +80,21 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         //        }
         
         
-        NetworkRequest.sharedInstance.getRequest(urlString: urlStr, params: par, success: { (response) in
-            let str = response["code"] as! String
-            if str == "0000" {
-                let dataArr = response["data"] as! [Any]
-                if let devices = [Device].deserialize(from: dataArr){
-                    if let device = devices[0] {
-                        print(device.showName)
-                    }
-                }
-            }else {
-                
-            }
-        }) { (error) in
-            SVProgressHUD.showError(withStatus: error.localizedDescription)
-        }
+//        NetworkRequest.sharedInstance.getRequest(urlString: urlStr, params: par, success: { (response) in
+//            let str = response["code"] as! String
+//            if str == "0000" {
+//                let dataArr = response["data"] as! [Any]
+//                if let devices = [Device].deserialize(from: dataArr){
+//                    if let device = devices[0] {
+//                        print(device.showName)
+//                    }
+//                }
+//            }else {
+//
+//            }
+//        }) { (error) in
+//            SVProgressHUD.showError(withStatus: error.localizedDescription)
+//        }
     }
     
     
