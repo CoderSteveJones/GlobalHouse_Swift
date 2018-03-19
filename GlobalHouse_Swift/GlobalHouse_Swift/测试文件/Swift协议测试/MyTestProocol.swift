@@ -13,3 +13,4 @@ protocol MyTestProtocol {
     var name: String { get set }
     func getName()
 }
+

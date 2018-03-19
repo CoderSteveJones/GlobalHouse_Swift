@@ -362,8 +362,15 @@
 		B51EDB7A205A1377004B697A /* 测试文件 */ = {
 			isa = PBXGroup;
 			children = (
+				B5E31FA8205CFD3C009C5609 /* Swift协议测试 */,
+				B521ED8B205BC7DD005D5131 /* 代理测试View */,
+				B521ED81205B5171005D5131 /* UIViewExtension.swift */,
 				B51EDB7B205A1384004B697A /* TestViewController.swift */,
 				B51EDB7C205A1384004B697A /* TestViewController.xib */,
+				B5510EB7204E5F2E00D0D5F8 /* ViewController.swift */,
+				B5522ED0205A4B7C00F69ABE /* ViewController.xib */,
+				B521ED83205B6DB3005D5131 /* TestCell.swift */,
+				B521ED84205B6DB3005D5131 /* TestCell.xib */,
 			);
 			path = "测试文件";
 			sourceTree = "<group>";
@@ -371,9 +378,7 @@
 		B51EDB7F205A1BD3004B697A /* 自定义View */ = {
 			isa = PBXGroup;
 			children = (
-				B521ED8B205BC7DD005D5131 /* 代理测试View */,
 				B51EDB80205A1BD3004B697A /* 弹出框 */,
-				B5E31FA8205CFD3C009C5609 /* Swift协议测试 */,
 			);
 			name = "自定义View";
 			path = "ItemController/自定义View";
@@ -391,7 +396,6 @@
 		B521ED80205B5157005D5131 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				B521ED81205B5171005D5131 /* UIViewExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -443,12 +447,9 @@
 				B5E31F5D205CA9B6009C5609 /* Category */,
 				B5383DC1205934910056C019 /* Network */,
 				B51EDB7F205A1BD3004B697A /* 自定义View */,
+				B51EDB7A205A1377004B697A /* 测试文件 */,
 				B5510EE4204E647700D0D5F8 /* BaseController */,
 				B5510EE3204E647700D0D5F8 /* ItemController */,
-				B5510EB7204E5F2E00D0D5F8 /* ViewController.swift */,
-				B5522ED0205A4B7C00F69ABE /* ViewController.xib */,
-				B521ED83205B6DB3005D5131 /* TestCell.swift */,
-				B521ED84205B6DB3005D5131 /* TestCell.xib */,
 				B5510EB9204E5F2E00D0D5F8 /* Main.storyboard */,
 				B5510EBC204E5F2E00D0D5F8 /* Assets.xcassets */,
 				B5510EBE204E5F2E00D0D5F8 /* LaunchScreen.storyboard */,
@@ -480,7 +481,6 @@
 			children = (
 				B5E31F61205CDB9F009C5609 /* 支付文件 */,
 				B5E31EB5205C9F8E009C5609 /* 百度语音识别 */,
-				B51EDB7A205A1377004B697A /* 测试文件 */,
 				B5510EEF204E7D6600D0D5F8 /* 主页 */,
 				B5510EF7204E7D6600D0D5F8 /* 管理 */,
 				B5510EFB204E7D6600D0D5F8 /* 模式 */,

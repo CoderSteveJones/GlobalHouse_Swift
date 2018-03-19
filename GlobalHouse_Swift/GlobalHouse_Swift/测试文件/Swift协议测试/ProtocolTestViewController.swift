@@ -8,33 +8,14 @@
 
 import UIKit
 
-struct Point {
-    var x: Int
-    var y: Int
-}
 
-extension Point: CustomStringConvertible {
-    var description: String {
-        return "x == \(self.x),y == \(self.y)"
-    }
-}
-
-
-class ProtocolTestViewController: BaseViewController,MyTestProtocol {
+class ProtocolTestViewController: BaseViewController {
     
-    var name: String = ""
-    
-    func getName() {
-        
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        let p = Point(x: 10, y: 20)
-        
     }
 
     override func didReceiveMemoryWarning() {
