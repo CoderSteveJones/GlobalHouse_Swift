@@ -32,6 +32,9 @@
 		B52130302060D3E300E82C8B /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = B52130192060D3E300E82C8B /* MJRefreshBackFooter.m */; };
 		B52130312060D3E300E82C8B /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = B521301A2060D3E300E82C8B /* MJRefreshAutoFooter.m */; };
 		B52130322060D3E300E82C8B /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = B521301C2060D3E300E82C8B /* MJRefreshComponent.m */; };
+		B52130352060D71200E82C8B /* GoodsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52130332060D71200E82C8B /* GoodsCollectionViewCell.swift */; };
+		B52130362060D71200E82C8B /* GoodsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B52130342060D71200E82C8B /* GoodsCollectionViewCell.xib */; };
+		B52130382060E13F00E82C8B /* GHGoods.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52130372060E13F00E82C8B /* GHGoods.swift */; };
 		B521ED82205B5171005D5131 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B521ED81205B5171005D5131 /* UIViewExtension.swift */; };
 		B521ED85205B6DB3005D5131 /* TestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B521ED83205B6DB3005D5131 /* TestCell.swift */; };
 		B521ED86205B6DB3005D5131 /* TestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B521ED84205B6DB3005D5131 /* TestCell.xib */; };
@@ -228,6 +231,9 @@
 		B521301C2060D3E300E82C8B /* MJRefreshComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshComponent.m; sourceTree = "<group>"; };
 		B521301D2060D3E300E82C8B /* MJRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshFooter.h; sourceTree = "<group>"; };
 		B521301E2060D3E300E82C8B /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackFooter.h; sourceTree = "<group>"; };
+		B52130332060D71200E82C8B /* GoodsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsCollectionViewCell.swift; sourceTree = "<group>"; };
+		B52130342060D71200E82C8B /* GoodsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoodsCollectionViewCell.xib; sourceTree = "<group>"; };
+		B52130372060E13F00E82C8B /* GHGoods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHGoods.swift; sourceTree = "<group>"; };
 		B521ED81205B5171005D5131 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		B521ED83205B6DB3005D5131 /* TestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCell.swift; sourceTree = "<group>"; };
 		B521ED84205B6DB3005D5131 /* TestCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestCell.xib; sourceTree = "<group>"; };
@@ -859,6 +865,7 @@
 			isa = PBXGroup;
 			children = (
 				B585625B205FA22000EFF614 /* DeviceCategory.swift */,
+				B52130372060E13F00E82C8B /* GHGoods.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -868,6 +875,8 @@
 			children = (
 				B5856257205F992800EFF614 /* CategoryCell.swift */,
 				B5856258205F992800EFF614 /* CategoryCell.xib */,
+				B52130332060D71200E82C8B /* GoodsCollectionViewCell.swift */,
+				B52130342060D71200E82C8B /* GoodsCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1389,6 +1398,7 @@
 				B5E31F23205C9F9C009C5609 /* record_success.caf in Resources */,
 				B5E31F17205C9F9C009C5609 /* bds_license.dat in Resources */,
 				B5E31F2C205C9F9C009C5609 /* darkGreen.bundle in Resources */,
+				B52130362060D71200E82C8B /* GoodsCollectionViewCell.xib in Resources */,
 				B521ED8A205BC6EC005D5131 /* ProtocolView.xib in Resources */,
 				B5E31F2F205C9F9C009C5609 /* English_Speech_Female.dat in Resources */,
 				B5856260205FE30400EFF614 /* AlipaySDK.bundle in Resources */,
@@ -1522,6 +1532,7 @@
 				B521302A2060D3E300E82C8B /* MJRefreshAutoNormalFooter.m in Sources */,
 				B521302D2060D3E300E82C8B /* MJRefreshGifHeader.m in Sources */,
 				B51EDB7D205A1384004B697A /* TestViewController.swift in Sources */,
+				B52130352060D71200E82C8B /* GoodsCollectionViewCell.swift in Sources */,
 				B5856251205F972B00EFF614 /* ShopcartViewController.swift in Sources */,
 				B5E31F3A205C9F9C009C5609 /* DetailInputTableViewCell.m in Sources */,
 				B5856233205F900A00EFF614 /* ZCycleViewCell.swift in Sources */,
@@ -1543,6 +1554,7 @@
 				B5E31FA3205CFCC4009C5609 /* MyTestProocol.swift in Sources */,
 				B5510F10204E908D00D0D5F8 /* GHDefine.swift in Sources */,
 				B5E31F7D205CE04F009C5609 /* AliPayViewController.swift in Sources */,
+				B52130382060E13F00E82C8B /* GHGoods.swift in Sources */,
 				B521302B2060D3E300E82C8B /* MJRefreshNormalHeader.m in Sources */,
 				B5383DC3205934EF0056C019 /* NetworkRequest.swift in Sources */,
 				B52130252060D3E300E82C8B /* MJRefreshBackGifFooter.m in Sources */,
