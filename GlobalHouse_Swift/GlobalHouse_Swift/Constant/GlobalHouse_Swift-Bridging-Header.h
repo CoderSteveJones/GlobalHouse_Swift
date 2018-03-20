@@ -25,6 +25,10 @@
 #import "WXApi.h"
 #import "WXApiManager.h"
 
+// 友盟推送
+#import <UMCommon/UMCommon.h>
+#import <UMPush/UMessage.h>
+
 
 
 #endif /* GlobalHouse_Swift_Bridging_Header_h */

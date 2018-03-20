@@ -43,6 +43,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // 键盘配置
         configKeyBoard()
         
+        // 推送配置
+        configUMPush(launchOptions: launchOptions)
+        
         return true
     }
 
@@ -56,7 +59,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         mgr.shouldToolbarUsesTextFieldTintColor = true
     }
     
+    /// 配置微信支付
     fileprivate func configWXPay(){
+        
+    }
+    
+    
+    /// 配置友盟推送
+    fileprivate func configUMPush(launchOptions: [UIApplicationLaunchOptionsKey: Any]?) {
+        
+        UMConfigure.initWithAppkey("", channel: "App Store")
+        if #available(iOS 10.0, *) {
+            UNUserNotificationCenter.current().delegate = self as? UNUserNotificationCenterDelegate
+        } else {
+            // Fallback on earlier versions
+        }
+        let entity = UMessageRegisterEntity()
+        entity.types = Int(UInt8(UMessageAuthorizationOptions.alert.rawValue) | UInt8(UMessageAuthorizationOptions.badge.rawValue) | UInt8(UMessageAuthorizationOptions.sound.rawValue))
+        UMessage.registerForRemoteNotifications(launchOptions: launchOptions, entity: entity, completionHandler: { (granted, error) in
+            
+            if granted {
+                // 用户选择了接收Push消息
+            }else {
+                // 用户拒绝接收Push消息
+            }
+            
+        })
         
     }
     
@@ -83,12 +111,58 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
 
+    /// 支付处理
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
         
         handldAliPay(url: url)
         handldAliPay(url: url)
         return true
     }
+    /******************************************** 友盟推送**************************/
+    // iOS10以下使用这两个方法接收通知，
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        
+        UMessage.setAutoAlert(false)
+        if Int(UIDevice.current.systemVersion)! < 10 {
+            completionHandler(UIBackgroundFetchResult.newData)
+        }
+        
+    }
+    
+    //iOS10新增：处理前台收到通知的代理方法
+    @available(iOS 10.0, *)
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        
+        let userInfo = notification.request.content.userInfo
+        if notification.request.trigger is UNPushNotificationTrigger {
+            //应用处于前台时的远程推送接受
+            //关闭友盟自带的弹出框
+            UMessage.setAutoAlert(false)
+            //必须加这句代码
+            UMessage.didReceiveRemoteNotification(userInfo)
+        } else {
+            //应用处于后台时的本地推送接受
+        }
+        //当应用处于前台时提示设置，需要哪个可以设置哪一个
+        completionHandler(UNNotificationPresentationOptions(rawValue: UNNotificationPresentationOptions.RawValue(UInt8(UNNotificationPresentationOptions.sound.rawValue) | UInt8(UNNotificationPresentationOptions.badge.rawValue) | UInt8(UNNotificationPresentationOptions.alert.rawValue))))
+    }
+    
+    
+    //iOS10新增：处理后台点击通知的代理方法
+    @available(iOS 10.0, *)
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        let userInfo = response.notification.request.content.userInfo
+        if response.notification.request.trigger is UNPushNotificationTrigger {
+            //应用处于前台时的远程推送接受
+            //关闭友盟自带的弹出框
+            UMessage.setAutoAlert(false)
+            //必须加这句代码
+            UMessage.didReceiveRemoteNotification(userInfo)
+        } else {
+            //应用处于后台时的本地推送接受
+        }
+    }
+    
     
 }
 
