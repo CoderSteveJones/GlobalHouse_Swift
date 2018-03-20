@@ -11,8 +11,9 @@ import UIKit
 class CategoryViewController: BaseViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var collectionView: UICollectionView!
     
-    fileprivate lazy var firstReload = true
+    fileprivate lazy var firstReload = true // 第一次加载
     fileprivate lazy var categorys = [DeviceCategory]()
     
     override func viewDidLoad() {
@@ -20,12 +21,33 @@ class CategoryViewController: BaseViewController, UITableViewDataSource, UITable
 
         // Do any additional setup after loading the view.
         self.title = "分类"
-        tableView.register(UINib.init(nibName: "CategoryCell", bundle: nil), forCellReuseIdentifier: "cellID")
-//        tableView.layer.borderWidth = 0.5;
-//        tableView.layer.borderColor = UIColor.lightGray.cgColor;
+        setupTableView()
+        setupCollectionView()
+        loadDataForCategory()
+    }
+    
+}
 
-        let urlStr = "http://smartcat.fun/getAppHomeList"
-        NetworkRequest.sharedInstance.getRequest(urlString: urlStr, params: nil, success: { (response) in
+extension CategoryViewController {
+    
+    
+    /// 设置tableView
+    fileprivate func setupTableView() {
+        
+        tableView.register(UINib.init(nibName: "CategoryCell", bundle: nil), forCellReuseIdentifier: "cellID")
+    }
+    
+    
+    /// 设置collectionView
+    fileprivate func setupCollectionView() {
+        
+    }
+    
+    
+    /// 分类获取
+    fileprivate func loadDataForCategory() {
+        
+        NetworkRequest.sharedInstance.getRequest(urlString: getCategory, params: nil, success: { (response) in
             
             let code = response["code"] as! String
             if code == "0000" {
@@ -43,8 +65,15 @@ class CategoryViewController: BaseViewController, UITableViewDataSource, UITable
             SVProgressHUD.doAnythingFailed(withHUDMessage: error.localizedDescription, withDuration: 1.5)
         }
     }
+    
+    fileprivate func loadDataForGoodlist() {
+        
+    }
 }
 
+extension CategoryViewController {
+    
+}
 
 extension CategoryViewController {
     

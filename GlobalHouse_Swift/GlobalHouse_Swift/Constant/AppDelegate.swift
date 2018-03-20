@@ -23,7 +23,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = rootVC
         window?.makeKeyAndVisible()
         
-        
         // 测试代码
 //        window = UIWindow(frame: UIScreen.main.bounds)
 //        window?.rootViewController = ViewController()
@@ -64,7 +63,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
     }
     
-    
+   
     /// 配置友盟推送
     fileprivate func configUMPush(launchOptions: [UIApplicationLaunchOptionsKey: Any]?) {
         
