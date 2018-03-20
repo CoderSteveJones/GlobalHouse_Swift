@@ -38,7 +38,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        window?.rootViewController = ProtocolTestViewController()
 //        window?.makeKeyAndVisible()
 
-        
         // 键盘配置
         configKeyBoard()
         

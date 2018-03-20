@@ -14,6 +14,7 @@ class ShopcartViewController: BaseViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        title = "购物车"
     }
 
     override func didReceiveMemoryWarning() {

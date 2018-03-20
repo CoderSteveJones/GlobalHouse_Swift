@@ -133,7 +133,11 @@ extension CategoryViewController {
                     self.collectionView.reloadData()
                     if getGoods.count < 10 {
                         self.collectionView.mj_footer.endRefreshingWithNoMoreData()
+                        if getGoods.count == 0 {
+                            SVProgressHUD.doAnyRemind(withHUDMessage: "暂无数据", withDuration: 1.5)
+                        }
                     }
+                    
                 }
             }else {
                 SVProgressHUD.doAnyRemind(withHUDMessage: response["message"] as! String, withDuration: 1.5)
@@ -194,7 +198,7 @@ extension CategoryViewController {
         
         // 点击显示其他类别商品
         self.currentCategory = currentCategory
-        loadDataForGoodlist(isMore: false)
+        self.collectionView.mj_header.beginRefreshing()
     }
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
