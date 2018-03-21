@@ -3,6 +3,11 @@ PODS:
   - AlamofireObjectMapper (5.0.0):
     - Alamofire (~> 4.1)
     - ObjectMapper (~> 3.0)
+  - AMap3DMap (5.7.0):
+    - AMapFoundation (~> 1.4)
+  - AMapFoundation (1.4.3)
+  - AMapLocation (2.6.0):
+    - AMapFoundation (~> 1.4)
   - CRRefresh (1.0.6)
   - HandyJSON (4.0.0-beta.1)
   - IQKeyboardManagerSwift (5.0.7)
@@ -19,6 +24,8 @@ PODS:
 
 DEPENDENCIES:
   - AlamofireObjectMapper (~> 5.0)
+  - AMap3DMap
+  - AMapLocation
   - CRRefresh
   - HandyJSON (~> 4.0.0-beta.1)
   - IQKeyboardManagerSwift
@@ -32,6 +39,9 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
   AlamofireObjectMapper: 5fafc816351cbbc0d486611aaeba7461c0cbad49
+  AMap3DMap: 97afc57b88628237d916991ac31795eb7bde3f63
+  AMapFoundation: 973682cfe60b92efd73a8ef8f1144fa0fa8e1296
+  AMapLocation: 55116a2c8956eab7550cbb56e989aa5cdcc424e3
   CRRefresh: fa89bab742592500ce9f76301c152544ec5264e8
   HandyJSON: 428bb18e2c34c2a77361accebf90cf64e4f74118
   IQKeyboardManagerSwift: 30fb3a61de1af53a95e02b80fb54ed0a19d5ede5
@@ -43,6 +53,6 @@ SPEC CHECKSUMS:
   UMCPush: 6d67ff5ca853857e2690abbdaecb86b254b1f823
   UMCSecurityPlugins: 0831a08f3988f3cea9f1d3a7626cd9bee4fef150
 
-PODFILE CHECKSUM: b54012fc276a9de2760f767803b922c72a632ede
+PODFILE CHECKSUM: cd3d11767f91f55c9e2963406e555c1f2b7e9d3f
 
 COCOAPODS: 1.4.0

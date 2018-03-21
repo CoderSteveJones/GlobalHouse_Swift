@@ -15,4 +15,9 @@ pod 'UMCCommon'
 pod 'UMCSecurityPlugins'
 pod 'UMCPush'
 
+# 高德地图
+pod 'AMap3DMap'
+pod 'AMapLocation'
+
+
 end

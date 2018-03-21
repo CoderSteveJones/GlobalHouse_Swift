@@ -17,6 +17,8 @@ let BDVoiceSecretKey = "71c77bc579eebb075854961bfe51544f"
 // 微信APPID
 let wxAppid = ""
 
+// 高德地图KEY
+let GDMapKey = "106e669758234d40912af11befd5c344"
 
 // 屏幕的物理宽度
 let kScreenW = UIScreen.main.bounds.size.width
