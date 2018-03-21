@@ -31,6 +31,9 @@
 #import <UMCommon/UMCommon.h>
 #import <UMPush/UMessage.h>
 
-
+// 高德地图
+#import <AMapFoundationKit/AMapFoundationKit.h>
+#import <AMapLocationKit/AMapLocationKit.h>
+#import <MAMapKit/MAMapKit.h>
 
 #endif /* GlobalHouse_Swift_Bridging_Header_h */

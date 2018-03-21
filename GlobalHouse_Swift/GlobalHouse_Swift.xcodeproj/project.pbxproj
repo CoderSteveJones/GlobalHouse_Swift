@@ -61,6 +61,15 @@
 		B5383DC3205934EF0056C019 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5383DC2205934EF0056C019 /* NetworkRequest.swift */; };
 		B54A4D482061E57500DE05A3 /* GHStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A4D472061E57500DE05A3 /* GHStore.swift */; };
 		B54A4D4A2061E6B300DE05A3 /* GHShopCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A4D492061E6B300DE05A3 /* GHShopCart.swift */; };
+		B54A4D512062282A00DE05A3 /* GDMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A4D4F2062282A00DE05A3 /* GDMapViewController.swift */; };
+		B54A4D522062282A00DE05A3 /* GDMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B54A4D502062282A00DE05A3 /* GDMapViewController.xib */; };
+		B54A4D5520622AF100DE05A3 /* SingleLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A4D5320622AF100DE05A3 /* SingleLocationViewController.swift */; };
+		B54A4D5620622AF100DE05A3 /* SingleLocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B54A4D5420622AF100DE05A3 /* SingleLocationViewController.xib */; };
+		B54A4D5920622B0400DE05A3 /* SerialLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A4D5720622B0400DE05A3 /* SerialLocationViewController.swift */; };
+		B54A4D5A20622B0400DE05A3 /* SerialLocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B54A4D5820622B0400DE05A3 /* SerialLocationViewController.xib */; };
+		B54A4D5D20622B1800DE05A3 /* BackgroundLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A4D5B20622B1800DE05A3 /* BackgroundLocationController.swift */; };
+		B54A4D5E20622B1800DE05A3 /* BackgroundLocationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B54A4D5C20622B1800DE05A3 /* BackgroundLocationController.xib */; };
+		B54A4D6320623C7C00DE05A3 /* GHRunningHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A4D6220623C7C00DE05A3 /* GHRunningHeader.swift */; };
 		B5510EB6204E5F2E00D0D5F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5510EB5204E5F2E00D0D5F8 /* AppDelegate.swift */; };
 		B5510EB8204E5F2E00D0D5F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5510EB7204E5F2E00D0D5F8 /* ViewController.swift */; };
 		B5510EBB204E5F2E00D0D5F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5510EB9204E5F2E00D0D5F8 /* Main.storyboard */; };
@@ -280,6 +289,15 @@
 		B5383DC2205934EF0056C019 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		B54A4D472061E57500DE05A3 /* GHStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHStore.swift; sourceTree = "<group>"; };
 		B54A4D492061E6B300DE05A3 /* GHShopCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHShopCart.swift; sourceTree = "<group>"; };
+		B54A4D4F2062282A00DE05A3 /* GDMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDMapViewController.swift; sourceTree = "<group>"; };
+		B54A4D502062282A00DE05A3 /* GDMapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GDMapViewController.xib; sourceTree = "<group>"; };
+		B54A4D5320622AF100DE05A3 /* SingleLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleLocationViewController.swift; sourceTree = "<group>"; };
+		B54A4D5420622AF100DE05A3 /* SingleLocationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleLocationViewController.xib; sourceTree = "<group>"; };
+		B54A4D5720622B0400DE05A3 /* SerialLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialLocationViewController.swift; sourceTree = "<group>"; };
+		B54A4D5820622B0400DE05A3 /* SerialLocationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SerialLocationViewController.xib; sourceTree = "<group>"; };
+		B54A4D5B20622B1800DE05A3 /* BackgroundLocationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundLocationController.swift; sourceTree = "<group>"; };
+		B54A4D5C20622B1800DE05A3 /* BackgroundLocationController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BackgroundLocationController.xib; sourceTree = "<group>"; };
+		B54A4D6220623C7C00DE05A3 /* GHRunningHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHRunningHeader.swift; sourceTree = "<group>"; };
 		B5510EB2204E5F2E00D0D5F8 /* GlobalHouse_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlobalHouse_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5510EB5204E5F2E00D0D5F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5510EB7204E5F2E00D0D5F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -502,6 +520,7 @@
 			isa = PBXGroup;
 			children = (
 				B51EDB80205A1BD3004B697A /* 弹出框 */,
+				B54A4D6420623C8700DE05A3 /* 下拉刷新奔跑 */,
 			);
 			name = "自定义View";
 			path = "ItemController/自定义View";
@@ -657,6 +676,77 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		B54A4D4B2062280400DE05A3 /* 高德地图文件 */ = {
+			isa = PBXGroup;
+			children = (
+				B54A4D4C2062280400DE05A3 /* Controller */,
+				B54A4D4D2062280400DE05A3 /* Model */,
+				B54A4D4E2062280400DE05A3 /* View */,
+			);
+			path = "高德地图文件";
+			sourceTree = "<group>";
+		};
+		B54A4D4C2062280400DE05A3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B54A4D4F2062282A00DE05A3 /* GDMapViewController.swift */,
+				B54A4D502062282A00DE05A3 /* GDMapViewController.xib */,
+				B54A4D5F20622B1D00DE05A3 /* 单次定位 */,
+				B54A4D6020622B2700DE05A3 /* 连续定位 */,
+				B54A4D6120622B2E00DE05A3 /* 后台连续定位 */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B54A4D4D2062280400DE05A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B54A4D4E2062280400DE05A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B54A4D5F20622B1D00DE05A3 /* 单次定位 */ = {
+			isa = PBXGroup;
+			children = (
+				B54A4D5320622AF100DE05A3 /* SingleLocationViewController.swift */,
+				B54A4D5420622AF100DE05A3 /* SingleLocationViewController.xib */,
+			);
+			path = "单次定位";
+			sourceTree = "<group>";
+		};
+		B54A4D6020622B2700DE05A3 /* 连续定位 */ = {
+			isa = PBXGroup;
+			children = (
+				B54A4D5720622B0400DE05A3 /* SerialLocationViewController.swift */,
+				B54A4D5820622B0400DE05A3 /* SerialLocationViewController.xib */,
+			);
+			path = "连续定位";
+			sourceTree = "<group>";
+		};
+		B54A4D6120622B2E00DE05A3 /* 后台连续定位 */ = {
+			isa = PBXGroup;
+			children = (
+				B54A4D5B20622B1800DE05A3 /* BackgroundLocationController.swift */,
+				B54A4D5C20622B1800DE05A3 /* BackgroundLocationController.xib */,
+			);
+			path = "后台连续定位";
+			sourceTree = "<group>";
+		};
+		B54A4D6420623C8700DE05A3 /* 下拉刷新奔跑 */ = {
+			isa = PBXGroup;
+			children = (
+				B54A4D6220623C7C00DE05A3 /* GHRunningHeader.swift */,
+			);
+			path = "下拉刷新奔跑";
+			sourceTree = "<group>";
+		};
 		B5510EA9204E5F2E00D0D5F8 = {
 			isa = PBXGroup;
 			children = (
@@ -720,6 +810,7 @@
 		B5510EE3204E647700D0D5F8 /* ItemController */ = {
 			isa = PBXGroup;
 			children = (
+				B54A4D4B2062280400DE05A3 /* 高德地图文件 */,
 				B5856237205F96B200EFF614 /* 发现 */,
 				B5856247205F96B200EFF614 /* 分类 */,
 				B585623B205F96B200EFF614 /* 购物车 */,
@@ -1384,6 +1475,11 @@
 					B5510EB1204E5F2E00D0D5F8 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					B5510EC5204E5F2F00D0D5F8 = {
 						CreatedOnToolsVersion = 9.2;
@@ -1446,6 +1542,7 @@
 				B52130BB2061345300E82C8B /* ShopCartHeaderView.xib in Resources */,
 				B5E31F25205C9F9C009C5609 /* lightBlue.bundle in Resources */,
 				B5E31F2D205C9F9C009C5609 /* lightRed.bundle in Resources */,
+				B54A4D522062282A00DE05A3 /* GDMapViewController.xib in Resources */,
 				B5E31F7E205CE04F009C5609 /* AliPayViewController.xib in Resources */,
 				B5E31F1B205C9F9C009C5609 /* bds_easr_input_model.dat in Resources */,
 				B5E31F5C205CA0EC009C5609 /* BDVoiceRecViewController.xib in Resources */,
@@ -1469,6 +1566,7 @@
 				B5510F0A204E7DA000D0D5F8 /* MyViewController.xib in Resources */,
 				B52130AB20611FAB00E82C8B /* GHReusableView.xib in Resources */,
 				B5E31F24205C9F9C009C5609 /* record_fail.caf in Resources */,
+				B54A4D5E20622B1800DE05A3 /* BackgroundLocationController.xib in Resources */,
 				B5510EBD204E5F2E00D0D5F8 /* Assets.xcassets in Resources */,
 				B5E31F23205C9F9C009C5609 /* record_success.caf in Resources */,
 				B5E31F17205C9F9C009C5609 /* bds_license.dat in Resources */,
@@ -1481,8 +1579,10 @@
 				B5510EBB204E5F2E00D0D5F8 /* Main.storyboard in Resources */,
 				B5E31F1A205C9F9C009C5609 /* temp_license_2018-02-24.dat in Resources */,
 				B5E31F2B205C9F9C009C5609 /* defaultFullScreenTheme.bundle in Resources */,
+				B54A4D5A20622B0400DE05A3 /* SerialLocationViewController.xib in Resources */,
 				B52130AE20611FAB00E82C8B /* RecommendeMaterialCell.xib in Resources */,
 				B5E31F1C205C9F9C009C5609 /* bds_easr_mfe_dnn.dat in Resources */,
+				B54A4D5620622AF100DE05A3 /* SingleLocationViewController.xib in Resources */,
 				B5E31F38205C9F9C009C5609 /* .gitignore in Resources */,
 				B5510F0E204E7DAB00D0D5F8 /* HomeViewController.xib in Resources */,
 				B51EDB7E205A1384004B697A /* TestViewController.xib in Resources */,
@@ -1615,6 +1715,7 @@
 				B521302A2060D3E300E82C8B /* MJRefreshAutoNormalFooter.m in Sources */,
 				B521302D2060D3E300E82C8B /* MJRefreshGifHeader.m in Sources */,
 				B51EDB7D205A1384004B697A /* TestViewController.swift in Sources */,
+				B54A4D5D20622B1800DE05A3 /* BackgroundLocationController.swift in Sources */,
 				B52130352060D71200E82C8B /* GoodsCollectionViewCell.swift in Sources */,
 				B5856251205F972B00EFF614 /* ShopcartViewController.swift in Sources */,
 				B5E31F3A205C9F9C009C5609 /* DetailInputTableViewCell.m in Sources */,
@@ -1624,10 +1725,12 @@
 				B52130312060D3E300E82C8B /* MJRefreshAutoFooter.m in Sources */,
 				B5856232205F900A00EFF614 /* ZCycleView.swift in Sources */,
 				B52130302060D3E300E82C8B /* MJRefreshBackFooter.m in Sources */,
+				B54A4D6320623C7C00DE05A3 /* GHRunningHeader.swift in Sources */,
 				B5E31F5B205CA0EC009C5609 /* BDVoiceRecViewController.swift in Sources */,
 				B52130A520611FAB00E82C8B /* RecommendeMaterialCell.swift in Sources */,
 				B52130AA20611FAB00E82C8B /* GHFirstReusableView.swift in Sources */,
 				B52130322060D3E300E82C8B /* MJRefreshComponent.m in Sources */,
+				B54A4D512062282A00DE05A3 /* GDMapViewController.swift in Sources */,
 				B5E31F39205C9F9C009C5609 /* SettingsTableViewCell.m in Sources */,
 				B521302E2060D3E300E82C8B /* MJRefreshFooter.m in Sources */,
 				B51EDB82205A1BF9004B697A /* KJAlertView.swift in Sources */,
@@ -1643,6 +1746,7 @@
 				B5E31FA3205CFCC4009C5609 /* MyTestProocol.swift in Sources */,
 				B54A4D482061E57500DE05A3 /* GHStore.swift in Sources */,
 				B5510F10204E908D00D0D5F8 /* GHDefine.swift in Sources */,
+				B54A4D5520622AF100DE05A3 /* SingleLocationViewController.swift in Sources */,
 				B5E31F7D205CE04F009C5609 /* AliPayViewController.swift in Sources */,
 				B52130382060E13F00E82C8B /* GHGoods.swift in Sources */,
 				B52130A420611FAB00E82C8B /* FavoriteCell.swift in Sources */,
@@ -1654,6 +1758,7 @@
 				B52130282060D3E300E82C8B /* MJRefreshAutoStateFooter.m in Sources */,
 				B52130202060D3E300E82C8B /* MJRefreshConst.m in Sources */,
 				B5E31FAB205CFD57009C5609 /* ProtocolTestViewController.swift in Sources */,
+				B54A4D5920622B0400DE05A3 /* SerialLocationViewController.swift in Sources */,
 				B521302C2060D3E300E82C8B /* MJRefreshStateHeader.m in Sources */,
 				B5E31F3F205C9F9C009C5609 /* BDVRSettingsItem.m in Sources */,
 				B521ED85205B6DB3005D5131 /* TestCell.swift in Sources */,

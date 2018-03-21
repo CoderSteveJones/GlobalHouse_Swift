@@ -39,6 +39,14 @@ class HomeViewController: BaseViewController,UICollectionViewDataSource, UIColle
         // Do any additional setup after loading the view
         title = "主页"
         setupCollectionView()
+        
+        
+        collectionView.mj_header = GHRunningHeader(refreshingBlock: {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute: { [weak self] in
+                self?.collectionView.mj_header.endRefreshing()
+            })
+        })
+        
     }
 }
 

@@ -38,6 +38,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        window?.rootViewController = ProtocolTestViewController()
 //        window?.makeKeyAndVisible()
 
+        
+        // 地图配置
+        mapConfig()
+        
+        
         // 键盘配置
         configKeyBoard()
         
@@ -60,6 +65,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     /// 配置微信支付
     fileprivate func configWXPay(){
         
+    }
+    
+    
+    /// 高德地图配置
+    fileprivate func mapConfig() {
+        AMapServices.shared().apiKey = GDMapKey
     }
     
    

@@ -29,6 +29,7 @@ class ShopcartViewController: BaseViewController, UITableViewDelegate, UITableVi
         tableView.reloadData()
     }
     
+
     @IBAction func allSelectedClick(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
         for shopCart in allData {
