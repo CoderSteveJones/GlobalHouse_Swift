@@ -15,7 +15,6 @@ class ShopcartViewController: BaseViewController, UITableViewDelegate, UITableVi
     fileprivate let cellID = "cellID"
     fileprivate let headerID = "headerID"
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -57,8 +56,7 @@ extension ShopcartViewController {
         let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: headerID) as! ShopCartHeaderView
         return headerView
     }
-    
-    
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
@@ -74,6 +72,7 @@ extension ShopcartViewController {
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 10
     }
+
     
     
     

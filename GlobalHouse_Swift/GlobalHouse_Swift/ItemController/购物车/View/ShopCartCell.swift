@@ -24,6 +24,10 @@ class ShopCartCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        setViewBorderRadius(view: cutBtn, radius: 2, width: 0.5, color: UIColor.lightGray)
+        setViewBorderRadius(view: addBtn, radius: 2, width: 0.5, color: UIColor.lightGray)
+        setViewBorderRadius(view: countTxf, radius: 0, width: 0.5, color: UIColor.lightGray)
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
