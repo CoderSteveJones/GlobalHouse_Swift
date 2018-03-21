@@ -21,6 +21,23 @@ class ShopCartCell: UITableViewCell {
     @IBOutlet weak var addBtn: UIButton!
     @IBOutlet weak var countTxf: UITextField!
     
+    var cutClick: ((_ shopCart: GHShopCart) -> Void)? // 删除
+    var addClick: ((_ shopCart: GHShopCart) -> Void)? // 添加
+    var goodesSelectedClick: ((_ shopCart: GHShopCart,_ goods: GHGoods) -> Void)? // 选中
+    
+    
+    
+    var goodes: GHGoods? {
+        didSet {
+            goodNameLabel.text = goodes?.goodsName
+            let imageName = (goodes?.goodsSelected)! ? "box_unchoose" : "box_choose"
+            let btnImage = UIImage(named: imageName)
+            clickBtn.setBackgroundImage(btnImage, for: .normal)
+        }
+    }
+    
+    var shopCart: GHShopCart?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -38,16 +55,22 @@ class ShopCartCell: UITableViewCell {
     
     
     @IBAction func clickBtnClick(_ sender: Any) {
-        
+        if goodesSelectedClick != nil {
+            goodesSelectedClick!(shopCart!,goodes!)
+        }
     }
     
     
     @IBAction func cutBtnClick(_ sender: Any) {
-        
+        if cutClick != nil {
+            cutClick!(shopCart!)
+        }
     }
     
     @IBAction func addBtnClick(_ sender: Any) {
-        
+        if addClick != nil {
+            addClick!(shopCart!)
+        }
     }
     
     

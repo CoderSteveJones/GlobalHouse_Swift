@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShopcartViewController" customModule="GlobalHouse_Swift" customModuleProvider="target">
             <connections>
+                <outlet property="allSelectedBtn" destination="Ca3-JF-R9X" id="ncp-yl-WMh"/>
                 <outlet property="tableView" destination="exV-Xk-KG2" id="Ht1-BN-d5b"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -43,46 +44,48 @@
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
                         </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ca3-JF-R9X">
+                            <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+                            <color key="backgroundColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="fiy-ms-cmG"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="全选" image="box_choose"/>
+                            <state key="selected" image="box_unchoose"/>
+                            <connections>
+                                <action selector="allSelectedClick:" destination="-1" eventType="touchUpInside" id="VFM-VO-YF4"/>
+                            </connections>
+                        </button>
                     </subviews>
-                    <color key="backgroundColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="2pj-ch-DdG"/>
                         <constraint firstAttribute="trailing" secondItem="VHz-65-HsM" secondAttribute="trailing" id="5f1-eO-GLc"/>
                         <constraint firstAttribute="bottom" secondItem="VHz-65-HsM" secondAttribute="bottom" id="8Ei-z8-iBo"/>
                         <constraint firstItem="VHz-65-HsM" firstAttribute="top" secondItem="7iB-DD-cYP" secondAttribute="top" id="GFr-wY-WCp"/>
+                        <constraint firstAttribute="bottom" secondItem="Ca3-JF-R9X" secondAttribute="bottom" id="PGc-cg-y2G"/>
+                        <constraint firstItem="Ca3-JF-R9X" firstAttribute="top" secondItem="7iB-DD-cYP" secondAttribute="top" id="hGW-o4-UyC"/>
+                        <constraint firstItem="Ca3-JF-R9X" firstAttribute="leading" secondItem="7iB-DD-cYP" secondAttribute="leading" id="pg5-GK-aJa"/>
                     </constraints>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHG-Db-Yvd">
-                    <rect key="frame" x="20" y="617" width="60" height="50"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="60" id="mNk-Wi-y4o"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <state key="normal" title="全选" image="box_choose">
-                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </state>
-                    <state key="selected" image="clicked"/>
-                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="VHG-Db-Yvd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="1zx-ye-M7M"/>
                 <constraint firstItem="7iB-DD-cYP" firstAttribute="top" secondItem="exV-Xk-KG2" secondAttribute="bottom" id="GxP-Kj-3Ft"/>
                 <constraint firstItem="exV-Xk-KG2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="KKm-00-6z5"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="7iB-DD-cYP" secondAttribute="bottom" id="S41-MO-eOb"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7iB-DD-cYP" secondAttribute="trailing" id="SQA-Z2-iLz"/>
-                <constraint firstAttribute="bottom" secondItem="VHG-Db-Yvd" secondAttribute="bottom" id="Y0f-L1-yhM"/>
                 <constraint firstItem="7iB-DD-cYP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="kd3-LA-9ui"/>
-                <constraint firstItem="VHG-Db-Yvd" firstAttribute="top" secondItem="exV-Xk-KG2" secondAttribute="bottom" id="qJC-wP-7Zn"/>
                 <constraint firstItem="exV-Xk-KG2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="s1H-SX-Z7B"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="exV-Xk-KG2" secondAttribute="trailing" id="ucv-HA-Y4U"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="-211" y="16"/>
+            <point key="canvasLocation" x="-420" y="-87"/>
         </view>
     </objects>
     <resources>
         <image name="box_choose" width="29" height="29"/>
-        <image name="clicked" width="16" height="16"/>
+        <image name="box_unchoose" width="29" height="29"/>
     </resources>
 </document>

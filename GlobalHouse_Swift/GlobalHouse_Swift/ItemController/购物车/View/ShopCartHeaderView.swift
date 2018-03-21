@@ -13,13 +13,31 @@ class ShopCartHeaderView: UITableViewHeaderFooterView {
     @IBOutlet weak var clickBtn: UIButton!
     @IBOutlet weak var shopNameLabel: UILabel!
     
+    var storeClick:((_ shopCart: GHShopCart) -> Void)!
+    
+    
+    var shopCart: GHShopCart? {
+        didSet {
+            
+            shopNameLabel.text = shopCart?.store?.name
+            let imageName = (shopCart?.storeSelected)! ? "box_unchoose" : "box_choose"
+            let btnImage = UIImage(named: imageName)
+            clickBtn.setBackgroundImage(btnImage, for: .normal)
+        }
+    }
+    
     
     @IBAction func clickBtnClick(_ sender: Any) {
+        
+        if storeClick != nil {
+            storeClick!(shopCart!)
+        }
+        
     }
     
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.contentView.backgroundColor = UIColor.red
+        self.contentView.backgroundColor = UIColor.yellow
     }
 }

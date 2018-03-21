@@ -14,5 +14,8 @@ class GHGoods: HandyJSON {
     var image: String = ""
     var goodsName: String = ""
     
+    var goodsSelected = false // 购物车中被选择状态
+    
+    
     required init() {}
 }

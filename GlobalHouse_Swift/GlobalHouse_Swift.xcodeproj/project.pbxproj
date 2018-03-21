@@ -59,6 +59,8 @@
 		B521ED88205BC67E005D5131 /* ProtocolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B521ED87205BC67E005D5131 /* ProtocolView.swift */; };
 		B521ED8A205BC6EC005D5131 /* ProtocolView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B521ED89205BC6EC005D5131 /* ProtocolView.xib */; };
 		B5383DC3205934EF0056C019 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5383DC2205934EF0056C019 /* NetworkRequest.swift */; };
+		B54A4D482061E57500DE05A3 /* GHStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A4D472061E57500DE05A3 /* GHStore.swift */; };
+		B54A4D4A2061E6B300DE05A3 /* GHShopCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A4D492061E6B300DE05A3 /* GHShopCart.swift */; };
 		B5510EB6204E5F2E00D0D5F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5510EB5204E5F2E00D0D5F8 /* AppDelegate.swift */; };
 		B5510EB8204E5F2E00D0D5F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5510EB7204E5F2E00D0D5F8 /* ViewController.swift */; };
 		B5510EBB204E5F2E00D0D5F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5510EB9204E5F2E00D0D5F8 /* Main.storyboard */; };
@@ -276,6 +278,8 @@
 		B521ED87205BC67E005D5131 /* ProtocolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolView.swift; sourceTree = "<group>"; };
 		B521ED89205BC6EC005D5131 /* ProtocolView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProtocolView.xib; sourceTree = "<group>"; };
 		B5383DC2205934EF0056C019 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		B54A4D472061E57500DE05A3 /* GHStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHStore.swift; sourceTree = "<group>"; };
+		B54A4D492061E6B300DE05A3 /* GHShopCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHShopCart.swift; sourceTree = "<group>"; };
 		B5510EB2204E5F2E00D0D5F8 /* GlobalHouse_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlobalHouse_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5510EB5204E5F2E00D0D5F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5510EB7204E5F2E00D0D5F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -822,6 +826,8 @@
 		B585623D205F96B200EFF614 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B54A4D472061E57500DE05A3 /* GHStore.swift */,
+				B54A4D492061E6B300DE05A3 /* GHShopCart.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1582,6 +1588,7 @@
 				B521302F2060D3E300E82C8B /* MJRefreshHeader.m in Sources */,
 				B5E31F3D205C9F9C009C5609 /* DetailTableViewController.m in Sources */,
 				B5510EB8204E5F2E00D0D5F8 /* ViewController.swift in Sources */,
+				B54A4D4A2061E6B300DE05A3 /* GHShopCart.swift in Sources */,
 				B5510EEC204E7B0700D0D5F8 /* BaseViewController.swift in Sources */,
 				B52130B92061344600E82C8B /* ShopCartHeaderView.swift in Sources */,
 				B5856235205F900A00EFF614 /* ZPageControl.swift in Sources */,
@@ -1631,6 +1638,7 @@
 				B521301F2060D3E300E82C8B /* UIScrollView+MJRefresh.m in Sources */,
 				B52130262060D3E300E82C8B /* MJRefreshBackStateFooter.m in Sources */,
 				B5E31FA3205CFCC4009C5609 /* MyTestProocol.swift in Sources */,
+				B54A4D482061E57500DE05A3 /* GHStore.swift in Sources */,
 				B5510F10204E908D00D0D5F8 /* GHDefine.swift in Sources */,
 				B5E31F7D205CE04F009C5609 /* AliPayViewController.swift in Sources */,
 				B52130382060E13F00E82C8B /* GHGoods.swift in Sources */,

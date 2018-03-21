@@ -83,7 +83,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ORK-ui-TrP">
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ORK-ui-TrP">
                         <rect key="frame" x="245" y="63.5" width="40" height="25"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="40" id="8hh-RJ-YB4"/>
@@ -142,7 +142,7 @@
                 <outlet property="introLabel" destination="bu1-eg-wdx" id="PK3-8d-2bf"/>
                 <outlet property="priceLabel" destination="nNo-3k-CxR" id="S7t-Tj-Wbu"/>
             </connections>
-            <point key="canvasLocation" x="-153" y="108"/>
+            <point key="canvasLocation" x="-276" y="56"/>
         </tableViewCell>
     </objects>
     <resources>
