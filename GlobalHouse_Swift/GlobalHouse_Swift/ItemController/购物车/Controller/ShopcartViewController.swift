@@ -68,6 +68,12 @@ extension ShopcartViewController {
     
         tableView.register(UINib.init(nibName: "ShopCartCell", bundle: nil), forCellReuseIdentifier: cellID)
         tableView.register(UINib.init(nibName: "ShopCartHeaderView", bundle: nil), forHeaderFooterViewReuseIdentifier: headerID)
+        
+        tableView.mj_header = GHRunningHeader(refreshingBlock: {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute: { [weak self] in
+                self?.tableView.mj_header.endRefreshing()
+            })
+        })
     }
     
     // MARK: - UITableViewDataSource
@@ -162,7 +168,7 @@ extension ShopcartViewController {
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 44
+        return 35
     }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {

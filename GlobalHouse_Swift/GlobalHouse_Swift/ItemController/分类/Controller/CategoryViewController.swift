@@ -61,7 +61,7 @@ extension CategoryViewController {
     
         
         
-        collectionView.mj_header = MJRefreshNormalHeader.init(refreshingBlock: {
+        collectionView.mj_header = GHRunningHeader.init(refreshingBlock: {
             [weak self] in
             
             if let weakSelf = self {

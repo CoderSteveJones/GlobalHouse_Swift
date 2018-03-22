@@ -39,20 +39,20 @@ class HomeViewController: BaseViewController,UICollectionViewDataSource, UIColle
         // Do any additional setup after loading the view
         title = "主页"
         setupCollectionView()
-        
-        
-        collectionView.mj_header = GHRunningHeader(refreshingBlock: {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute: { [weak self] in
-                self?.collectionView.mj_header.endRefreshing()
-            })
-        })
-        
+        setupSearchView()
     }
 }
 
 extension HomeViewController {
     
     fileprivate func setupCollectionView() {
+        
+        // 刷新头
+        collectionView.mj_header = GHRunningHeader(refreshingBlock: {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute: { [weak self] in
+                self?.collectionView.mj_header.endRefreshing()
+            })
+        })
         
         // 注册头部视图
         self.collectionView.register(UINib.init(nibName: "GHReusableView", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: otherGHID)
@@ -64,6 +64,21 @@ extension HomeViewController {
         self.collectionView.register(UINib.init(nibName: "QuickMaterialCell", bundle: nil), forCellWithReuseIdentifier: qMCellID)
         self.collectionView.register(UINib.init(nibName: "RecommendeMaterialCell", bundle: nil), forCellWithReuseIdentifier: rMCellID)
         self.collectionView.register(UINib.init(nibName: "FavoriteCell", bundle: nil), forCellWithReuseIdentifier: ftCell)
+    }
+    
+    fileprivate func setupSearchView() {
+        
+        let searchView = Bundle.main.loadNibNamed("HomeSearchView", owner: self, options: nil)![0] as! HomeSearchView
+        searchView.frame = CGRect(x: 0, y: 0, width: kScreenW, height: 40)
+        searchView.backgroundColor = UIColor.clear
+        searchView.searchBtnClick = {
+            kPrint(item: "search")
+        }
+        searchView.scanBtnClick = {
+            kPrint(item: "scan")
+        }
+        self.navigationController?.navigationBar.addSubview(searchView)
+        
     }
     
 }

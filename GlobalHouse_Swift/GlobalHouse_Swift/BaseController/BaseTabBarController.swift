@@ -16,15 +16,19 @@ class BaseTabBarController: UITabBarController {
         // Do any additional setup after loading the view.
         
         let homeVC = HomeViewController()
-        setupChildVC(vc: homeVC, title: "主页", imageName: "", selectedImageName: "")
+        setupChildVC(vc: homeVC, title: "主页", imageName: "tabItem_home", selectedImageName: "tabItem_home_se")
         let categoryVC = CategoryViewController()
-        setupChildVC(vc: categoryVC, title: "分类", imageName: "", selectedImageName: "")
+        setupChildVC(vc: categoryVC, title: "分类", imageName: "tabItem_fl", selectedImageName: "tabItem_fl_se")
         let discoverVC = DiscoverViewController()
-        setupChildVC(vc: discoverVC, title: "发现", imageName: "", selectedImageName: "")
+        setupChildVC(vc: discoverVC, title: "发现", imageName: "tabItem_fx", selectedImageName: "tabItem_fx_se")
         let shopCartVC = ShopcartViewController()
-        setupChildVC(vc: shopCartVC, title: "购物车", imageName: "", selectedImageName: "")
+        setupChildVC(vc: shopCartVC, title: "购物车", imageName: "tabItem_gwc", selectedImageName: "tabItem_gwc_se")
         let myVC = MyViewController()
-        setupChildVC(vc: myVC, title: "我的", imageName: "", selectedImageName: "")
+        setupChildVC(vc: myVC, title: "我的", imageName: "tabItem_wd", selectedImageName: "tabItem_wd_se")
+        
+        // 设置tabbar的显示颜色
+//        self.tabBar.barTintColor = UIColor.red
+        
     }
     
     
@@ -32,20 +36,18 @@ class BaseTabBarController: UITabBarController {
         
         // nav
         let baseNav = BaseNavController(rootViewController: vc)
-        baseNav.tabBarItem.title = title
         
-        // 图片
-        var img = UIImage(named: imageName)
-        img = img?.withRenderingMode(.alwaysOriginal)
-        baseNav.tabBarItem.image = img
+        // title img selectedImg
+        let img = UIImage(named: imageName)?.withRenderingMode(.alwaysOriginal)
+        let selectedImg = UIImage(named: selectedImageName)?.withRenderingMode(.alwaysOriginal)
+        let tabBarItem = UITabBarItem(title: title, image: img, selectedImage: selectedImg)
+        baseNav.tabBarItem = tabBarItem
         
-        // 选中时图片
-        var selectedImg = UIImage(named: selectedImageName)
-        selectedImg = selectedImg?.withRenderingMode(.alwaysOriginal)
-        baseNav.tabBarItem.selectedImage = selectedImg
+        
+        
         
         // title富文本
-        let attr = [NSAttributedStringKey.foregroundColor : UIColor.red,
+        let attr = [NSAttributedStringKey.foregroundColor : UIColor.init(hexString: "#ec5527"),
                     NSAttributedStringKey.font : UIFont.systemFont(ofSize: 16.0)]
         
         baseNav.tabBarItem.setTitleTextAttributes(attr, for: .selected)

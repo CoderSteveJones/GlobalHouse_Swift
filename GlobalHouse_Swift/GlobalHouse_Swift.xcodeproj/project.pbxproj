@@ -70,6 +70,9 @@
 		B54A4D5D20622B1800DE05A3 /* BackgroundLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A4D5B20622B1800DE05A3 /* BackgroundLocationController.swift */; };
 		B54A4D5E20622B1800DE05A3 /* BackgroundLocationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B54A4D5C20622B1800DE05A3 /* BackgroundLocationController.xib */; };
 		B54A4D6320623C7C00DE05A3 /* GHRunningHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A4D6220623C7C00DE05A3 /* GHRunningHeader.swift */; };
+		B54A4D6C20624D8E00DE05A3 /* GHColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A4D6B20624D8E00DE05A3 /* GHColorExtension.swift */; };
+		B54A4D6E2062695300DE05A3 /* HomeSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54A4D6D2062695300DE05A3 /* HomeSearchView.swift */; };
+		B54A4D702062695F00DE05A3 /* HomeSearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B54A4D6F2062695F00DE05A3 /* HomeSearchView.xib */; };
 		B5510EB6204E5F2E00D0D5F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5510EB5204E5F2E00D0D5F8 /* AppDelegate.swift */; };
 		B5510EB8204E5F2E00D0D5F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5510EB7204E5F2E00D0D5F8 /* ViewController.swift */; };
 		B5510EBB204E5F2E00D0D5F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5510EB9204E5F2E00D0D5F8 /* Main.storyboard */; };
@@ -103,6 +106,10 @@
 		B5856260205FE30400EFF614 /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B585625E205FE30400EFF614 /* AlipaySDK.bundle */; };
 		B5856261205FE30400EFF614 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B585625F205FE30400EFF614 /* AlipaySDK.framework */; };
 		B5856263205FE68900EFF614 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5856262205FE68900EFF614 /* UserNotifications.framework */; };
+		B5DE1A312062775700787ED9 /* QrcodeScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE1A2F2062775700787ED9 /* QrcodeScanViewController.swift */; };
+		B5DE1A322062775700787ED9 /* QrcodeScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5DE1A302062775700787ED9 /* QrcodeScanViewController.xib */; };
+		B5DE1A3520627E1A00787ED9 /* ScanInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE1A3320627E1A00787ED9 /* ScanInfoViewController.swift */; };
+		B5DE1A3620627E1A00787ED9 /* ScanInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5DE1A3420627E1A00787ED9 /* ScanInfoViewController.xib */; };
 		B5E31F16205C9F9C009C5609 /* .gitIgnore in Resources */ = {isa = PBXBuildFile; fileRef = B5E31EBF205C9F9C009C5609 /* .gitIgnore */; };
 		B5E31F17205C9F9C009C5609 /* bds_license.dat in Resources */ = {isa = PBXBuildFile; fileRef = B5E31ED6205C9F9C009C5609 /* bds_license.dat */; };
 		B5E31F18205C9F9C009C5609 /* bds_easr_basic_model.dat in Resources */ = {isa = PBXBuildFile; fileRef = B5E31ED7205C9F9C009C5609 /* bds_easr_basic_model.dat */; };
@@ -298,6 +305,9 @@
 		B54A4D5B20622B1800DE05A3 /* BackgroundLocationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundLocationController.swift; sourceTree = "<group>"; };
 		B54A4D5C20622B1800DE05A3 /* BackgroundLocationController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BackgroundLocationController.xib; sourceTree = "<group>"; };
 		B54A4D6220623C7C00DE05A3 /* GHRunningHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHRunningHeader.swift; sourceTree = "<group>"; };
+		B54A4D6B20624D8E00DE05A3 /* GHColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHColorExtension.swift; sourceTree = "<group>"; };
+		B54A4D6D2062695300DE05A3 /* HomeSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSearchView.swift; sourceTree = "<group>"; };
+		B54A4D6F2062695F00DE05A3 /* HomeSearchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeSearchView.xib; sourceTree = "<group>"; };
 		B5510EB2204E5F2E00D0D5F8 /* GlobalHouse_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlobalHouse_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5510EB5204E5F2E00D0D5F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5510EB7204E5F2E00D0D5F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -340,6 +350,10 @@
 		B585625E205FE30400EFF614 /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
 		B585625F205FE30400EFF614 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
 		B5856262205FE68900EFF614 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		B5DE1A2F2062775700787ED9 /* QrcodeScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrcodeScanViewController.swift; sourceTree = "<group>"; };
+		B5DE1A302062775700787ED9 /* QrcodeScanViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QrcodeScanViewController.xib; sourceTree = "<group>"; };
+		B5DE1A3320627E1A00787ED9 /* ScanInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanInfoViewController.swift; sourceTree = "<group>"; };
+		B5DE1A3420627E1A00787ED9 /* ScanInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScanInfoViewController.xib; sourceTree = "<group>"; };
 		B5E31EBC205C9F9C009C5609 /* BDSWakeupParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSWakeupParameters.h; sourceTree = "<group>"; };
 		B5E31EBD205C9F9C009C5609 /* BDSASRParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSASRParameters.h; sourceTree = "<group>"; };
 		B5E31EBE205C9F9C009C5609 /* BDSEventManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDSEventManager.h; sourceTree = "<group>"; };
@@ -655,6 +669,7 @@
 			isa = PBXGroup;
 			children = (
 				B5212FEE2060CE3400E82C8B /* InterfaceExtension.swift */,
+				B54A4D6B20624D8E00DE05A3 /* GHColorExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -949,6 +964,10 @@
 			children = (
 				B5510F0B204E7DAB00D0D5F8 /* HomeViewController.swift */,
 				B5510F0C204E7DAB00D0D5F8 /* HomeViewController.xib */,
+				B5DE1A2F2062775700787ED9 /* QrcodeScanViewController.swift */,
+				B5DE1A302062775700787ED9 /* QrcodeScanViewController.xib */,
+				B5DE1A3320627E1A00787ED9 /* ScanInfoViewController.swift */,
+				B5DE1A3420627E1A00787ED9 /* ScanInfoViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -964,6 +983,8 @@
 			isa = PBXGroup;
 			children = (
 				B521309320611FAB00E82C8B /* 首页自定义Cell */,
+				B54A4D6D2062695300DE05A3 /* HomeSearchView.swift */,
+				B54A4D6F2062695F00DE05A3 /* HomeSearchView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1531,6 +1552,7 @@
 				B52130B720612B6800E82C8B /* ShopCartCell.xib in Resources */,
 				B5E31F19205C9F9C009C5609 /* bds_easr_mfe_cmvn.dat in Resources */,
 				B5E31F22205C9F9C009C5609 /* record_cancel.caf in Resources */,
+				B54A4D702062695F00DE05A3 /* HomeSearchView.xib in Resources */,
 				B51EDB84205A1C03004B697A /* KJAlertView.xib in Resources */,
 				B5E31F36205C9F9C009C5609 /* Chinese_Speech_Female.dat in Resources */,
 				B5E31F1D205C9F9C009C5609 /* bds_easr_gramm.dat in Resources */,
@@ -1578,12 +1600,14 @@
 				B5856252205F972B00EFF614 /* ShopcartViewController.xib in Resources */,
 				B5510EBB204E5F2E00D0D5F8 /* Main.storyboard in Resources */,
 				B5E31F1A205C9F9C009C5609 /* temp_license_2018-02-24.dat in Resources */,
+				B5DE1A322062775700787ED9 /* QrcodeScanViewController.xib in Resources */,
 				B5E31F2B205C9F9C009C5609 /* defaultFullScreenTheme.bundle in Resources */,
 				B54A4D5A20622B0400DE05A3 /* SerialLocationViewController.xib in Resources */,
 				B52130AE20611FAB00E82C8B /* RecommendeMaterialCell.xib in Resources */,
 				B5E31F1C205C9F9C009C5609 /* bds_easr_mfe_dnn.dat in Resources */,
 				B54A4D5620622AF100DE05A3 /* SingleLocationViewController.xib in Resources */,
 				B5E31F38205C9F9C009C5609 /* .gitignore in Resources */,
+				B5DE1A3620627E1A00787ED9 /* ScanInfoViewController.xib in Resources */,
 				B5510F0E204E7DAB00D0D5F8 /* HomeViewController.xib in Resources */,
 				B51EDB7E205A1384004B697A /* TestViewController.xib in Resources */,
 				B52130A920611FAB00E82C8B /* QuickMaterialCell.xib in Resources */,
@@ -1701,6 +1725,7 @@
 				B5E31F3C205C9F9C009C5609 /* BDVRSettings.m in Sources */,
 				B5212FEF2060CE3500E82C8B /* InterfaceExtension.swift in Sources */,
 				B5E31F3E205C9F9C009C5609 /* DetailTableViewCell.m in Sources */,
+				B54A4D6C20624D8E00DE05A3 /* GHColorExtension.swift in Sources */,
 				B5E31F42205C9F9C009C5609 /* AudioDataQueue.cpp in Sources */,
 				B52130222060D3E300E82C8B /* UIScrollView+MJExtension.m in Sources */,
 				B585624D205F96FE00EFF614 /* CategoryViewController.swift in Sources */,
@@ -1720,9 +1745,12 @@
 				B5856251205F972B00EFF614 /* ShopcartViewController.swift in Sources */,
 				B5E31F3A205C9F9C009C5609 /* DetailInputTableViewCell.m in Sources */,
 				B5856233205F900A00EFF614 /* ZCycleViewCell.swift in Sources */,
+				B54A4D6E2062695300DE05A3 /* HomeSearchView.swift in Sources */,
 				B521ED82205B5171005D5131 /* UIViewExtension.swift in Sources */,
+				B5DE1A312062775700787ED9 /* QrcodeScanViewController.swift in Sources */,
 				B5856255205F973D00EFF614 /* DiscoverViewController.swift in Sources */,
 				B52130312060D3E300E82C8B /* MJRefreshAutoFooter.m in Sources */,
+				B5DE1A3520627E1A00787ED9 /* ScanInfoViewController.swift in Sources */,
 				B5856232205F900A00EFF614 /* ZCycleView.swift in Sources */,
 				B52130302060D3E300E82C8B /* MJRefreshBackFooter.m in Sources */,
 				B54A4D6320623C7C00DE05A3 /* GHRunningHeader.swift in Sources */,

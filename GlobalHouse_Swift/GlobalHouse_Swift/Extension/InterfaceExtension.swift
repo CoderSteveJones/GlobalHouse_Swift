@@ -14,3 +14,4 @@ let baseUrl = "http://smartcat.fun/"
 let getCategory = baseUrl + "getAppHomeList"
 /// 获取商品列表
 let getGoodLsit = baseUrl + "GetGoodList"
+

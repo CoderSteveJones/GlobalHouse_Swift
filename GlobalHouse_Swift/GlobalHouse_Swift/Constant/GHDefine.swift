@@ -75,3 +75,5 @@ func setViewBorderRadius(view: UIView,radius: CGFloat,width: CGFloat,color: UICo
     view.layer.borderColor = color.cgColor
 }
 
+
+
